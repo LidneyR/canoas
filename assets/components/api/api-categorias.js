@@ -571,7 +571,7 @@ data = [{
                 key:'',
                 name:'Água sem Gás', 
                 img:'assets/images/produtos/bebidaaguasgas.png',  
-                price:5,
+                price:4,
                 quantidade:0, 
             },{
                 id:'2',
@@ -685,13 +685,13 @@ data = [{
             name:'Cervejas', 
             products:[{
                 id:'130',
-                name:'Cerveja Skol / Brahma / Itaipava Lata', 
+                name:'Cerveja Skol / Brahma Lata', 
                 img:'assets/images/produtos/cervejalatas.png',  
-                price:6, 
+                price:7, 
                 quantidade:0,
             },{
                 id:'131',
-                name:'Cerveja Brahma Duplo / Império / Petra Lata', 
+                name:'Cerveja Brahma Duplo / Original / Petra Lata', 
                 img:'assets/images/produtos/cervejaduplolata.png',  
                 price:8, 
                 quantidade:0,
@@ -704,38 +704,38 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'134',
+                id:'133',
                 name:'Cerveja Corona / Heineken Long Neck', 
                 img:'assets/images/produtos/cervejalong.png',  
-                price:14,
+                price:12.99,
                 quantidade:0, 
 
             },{
-                id:'135',
+                id:'134',
                 name:'Cerveja Bud / Stella Long Neck', 
                 img:'assets/images/produtos/cervejabudestellalongneck.png',  
                 price:12,
                 quantidade:0, 
 
             },{
-                id:'136',
+                id:'135',
                 name:'Cerveja sem alcool Long Neck ', 
                 img:'assets/images/produtos/cervejaheinekensalcoollongneck.png',  
-                price:14,
+                price:12.99,
                 quantidade:0, 
 
             },{
                 id:'191',
                 name:'Red Bull Energético', 
                 img:'assets/images/produtos/cervejaredbull.png',  
-                price:16,
+                price:15,
                 quantidade:0, 
 
             },{
                 id:'192',
                 name:'Monster Energético', 
                 img:'assets/images/produtos/cervejamonster.png',  
-                price:16,
+                price:15,
                 quantidade:0, 
 
             }]
