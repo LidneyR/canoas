@@ -169,77 +169,77 @@ data = [{
                 name:'Pastel Carne ', 
                 img:'assets/images/produtos/pastelcarne.png',  
 
-                price:14,
+                price:12.99,
                 quantidade:0,
             },{
                 id:'91',
                 name:'Pastel Queijo', 
                 img:'assets/images/produtos/pastelqueijo.png',  
 
-                price:14,
+                price:12.99,
                 quantidade:0,
             },{
                 id:'92',
                 name:'Pastel Bauru', 
                 img:'assets/images/produtos/pastelbauru.png',  
 
-                price:14,
+                price:12.99,
                 quantidade:0,
             },{
                 id:'93',
                 name:'Pastel Calabresa', 
                 img:'assets/images/produtos/pastelcalabresa.png',  
 
-                price:14,
+                price:12.99,
                 quantidade:0,
             },{
                 id:'94',
                 name:'Pastel Frango', 
                 img:'assets/images/produtos/pastelfrango.png',  
 
-                price:14,
+                price:12.99,
                 quantidade:0,
             },{
                 id:'95',
                 name:'Pastel Pizza', 
                 img:'assets/images/produtos/pastelpizza.png',  
 
-                price:14,
+                price:12.99,
                 quantidade:0,
             },{
                 id:'96',
                 name:'Pastel Brócolis', 
                 img:'assets/images/produtos/pastelbrocolis.png',  
 
-                price:14,
+                price:12.99,
                 quantidade:0,
             },{
                 id:'98',
                 name:'Pastel Carne com Queijo', 
                 img:'assets/images/produtos/pastelcarnequeijo.png',  
 
-                price:16,
+                price:14,
                 quantidade:0,
             },{
                 id:'99',
                 name:'Pastel Brócolis com Queijo', 
                 img:'assets/images/produtos/pastelbrocolisqueijo.png',  
 
-                price:16,
+                price:14,
                 quantidade:0,
             },{
                 id:'100',
                 name:'Pastel Frango com Catupiry', 
                 img:'assets/images/produtos/pastelfrangocatupiry.png',  
 
-                price:16,
+                price:14,
                 quantidade:0,
             },{
                 id:'101',
                 name:'Pastel Palmito', 
                 img:'assets/images/produtos/pastelpalmito.png',  
 
-                price:14,
+                price:12.99,
                 quantidade:0,
             },{
                 id:'102',
@@ -691,7 +691,7 @@ data = [{
                 quantidade:0,
             },{
                 id:'131',
-                name:'Cerveja Brahma Duplo / Original / Petra Lata', 
+                name:'Serra Malte / Original / Brahma Duplo ', 
                 img:'assets/images/produtos/cervejaduplolata.png',  
                 price:8, 
                 quantidade:0,
