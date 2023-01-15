@@ -29,6 +29,12 @@
 </head>
 <body>
 
+  <form class="form">
+    <input name="tarefa" type="text">
+    <button type="submit">send</button>
+  </form>
+  
+  <div id="list"></div>
        <!-- validation -->
     <div class="validation" id="validation" style="    background-image: url(assets/images/bg-validation.png) ;    ">
         <!-- <span class="number">12 99621 - 8661</span>  -->
@@ -151,7 +157,66 @@
  <script src="assets/components/swiper/swiper.js"></script>
  <script src="assets/js/app.js"></script>
 
-   
+
+ <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+ <script type="module">
+ //  import firebase from "firebase/app";
+ //  import "firebase/firestore";    
+ 
+ //  const firebase = require("firebase");
+ 
+ // Required for side-effects
+ // require("firebase/firestore");
+ // TODO: Replace the following with your app's Firebase project configuration
+ // See: https://firebase.google.com/docs/web/learn-more#config-object
+ const firebaseConfig = {
+  apiKey: "AIzaSyAyxC6S9lIs2q6MXPJzB4rpjod3HbRXJgU",
+  authDomain: "harmonyfoodapp.firebaseapp.com",
+  databaseURL: "https://harmonyfoodapp-default-rtdb.firebaseio.com",
+  projectId: "harmonyfoodapp",
+  storageBucket: "harmonyfoodapp.appspot.com",
+  messagingSenderId: "910886750410",
+  appId: "1:910886750410:web:810fa41051ae6d12684c33",
+  measurementId: "G-9HD4J8Z2XP"
+ }; 
+
+ // Initialize Firebase
+ firebase.initializeApp(firebaseConfig);
+
+
+ // Initialize Cloud Firestore and get a reference to the service
+ const db = firebase.firestore();
+
+
+
+ let form = document.querySelector(".form")
+ let list = document.getElementById("notifications")
+
+ form.addEventListener('submit', function(e){
+ e.preventDefault()
+
+ console.log("oi")
+ let tarefa=document.querySelector('[name=tarefa]').value
+ console.log(tarefa)
+ db.collection('pedidos').add({
+     tarefa:tarefa
+ })
+
+ form.reset()
+ })
+//  db.collection('pedidos').onSnapshot((data)=>{
+//  list.innerHTML=""
+//  data.docs.map(((val)=>[
+//  list.innerHTML+=` ${val.data().tarefa}`+'<br>'
+
+//  ]))
+//  })
+
+
+ </script>
+
     
 </body>
 </html>
