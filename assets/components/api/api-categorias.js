@@ -9,18 +9,22 @@ data = [{
             name:'Porções', 
             products:[{
                 id:'175',
+                categoria:'porcoes',  
                 name:'Porção Camarão Rosa Paulista', 
                 price:150, 
                 img:'assets/images/produtos/camaraorosapaulista.png',
                 quantidade:0,
             },{
                 id:'180',
+                categoria:'porcoes', 
                 name:'Porção Camarão Rosa Dorê', 
                 price:130, 
                 img:'assets/images/produtos/camaraorosadore.png',
                 quantidade:0,
             },{
                 id:'150',
+                categoria:'porcoes',
+
                 name:'Porção Camarão Paulista', 
                 price:100, 
                 img:'assets/images/produtos/camaraopaulista.png',
@@ -164,10 +168,11 @@ data = [{
             products:[{
                 id:'90',
                 name:'Pastel Carne ', 
-                img:'assets/images/produtos/pastelcarne.png',  
-
+                
+                img:'assets/images/produtos/pastelcarne.png',   
                 price:12.99,
                 quantidade:0,
+
             },{
                 id:'91',
                 name:'Pastel Queijo', 
@@ -568,12 +573,16 @@ data = [{
                 key:'',
                 name:'Água sem Gás', 
                 img:'assets/images/produtos/bebidaaguasgas.png',  
+                categoria:'bebidas',
+
                 price:4,
                 quantidade:0, 
             },{
                 id:'2',
                 key:'',
                 name:'Água com Gás', 
+                categoria:'bebidas',
+
                 img:'assets/images/produtos/bebidaaguacgas.png',  
                 price:5,
                 quantidade:0, 
@@ -1017,10 +1026,12 @@ var categoriesContainer=document.getElementById('categories')
                 <div id="`+tabContentMap.id +`" class="tabcontent">  
                 </div>
             `;
+            console.log(tabContentMap.name)
             var Contentsubs=document.getElementById(tabContentMap.id)
            
-          innitProd=  tabContentMap.products.map((productsMap)=>{  
+          innitProd=tabContentMap.products.map((productsMap)=>{  
             prods+=productsMap
+ 
                     Contentsubs.innerHTML+= `  
                         <div class="produto">
                                 <img src="`+productsMap.img +`" alt="" ></img>
