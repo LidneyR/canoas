@@ -54,12 +54,9 @@ data = [{
             },{
                 id:'154',
                 name:'Porção Peixe Cação', 
-                img:'assets/images/produtos/cacao.png',
-
+                img:'assets/images/produtos/cacao.png', 
                 price:70,
-                quantidade:0,
-
-
+                quantidade:0, 
             },{
                 id:'155',
                 name:'Porção Peixe Pescada', 
@@ -1148,6 +1145,9 @@ var categoriesContainer=document.getElementById('categories')
    + "*Itens Pedidos*" + "%0a" // Mensagem personalizada
    + "%0a" // Quebra de linhas
 
+
+  prodsSelct=[]
+
     data.map((apiData)=>{   
         apiData.itens.map((itensMap)=>{     
              itensMap.products.map((productsMap)=>{ 
@@ -1159,6 +1159,9 @@ var categoriesContainer=document.getElementById('categories')
                 prodMultiply=productsMap.price*productsMap.quantidade
                 totalCart+=prodMultiply
                 list+=productsMap.name 
+                prodsSelct.push(productsMap)
+                //  console.log(prodsSelct)
+
                
          
                 cartPreview.innerHTML= `    <div >     <button id="cartPreview" onclick="showCart()"><img src="assets/images/shopping-cart.png" alt=""></button> <span class="qtdIcon">`+cartQtd +` </span>   </div>  `;  
@@ -1217,7 +1220,6 @@ var categoriesContainer=document.getElementById('categories')
             </div> 
         `; 
   }
-
     getCheckout=()=>{ 
         select=document.getElementById('selectValidate')
         text = select.options[select.selectedIndex].text;
