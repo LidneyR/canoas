@@ -1223,80 +1223,80 @@ var categoriesContainer=document.getElementById('categories')
         text = select.options[select.selectedIndex].text;
         containerCheckout=document.getElementById('checkout')
         containerCheckout.setAttribute("class", "checkout")
-        containerCheckout.innerHTML= ` 
-        <div class="controls"> 
-                <button onclick="closeCheckout()"><svg class="svg-inline--fa fa-chevron-left" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-left"></i> Font Awesome fontawesome.com --></button>
-                <button onclick="closeCheckout()"><svg class="svg-inline--fa fa-xmark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg><!-- <i class="fa-solid fa-xmark"></i> Font Awesome fontawesome.com --></button>  
-            </div>
-        <div class="content"><h2>Finalizar Pedido </h2> </div>
-        <form>
-        <div>
-            <label>
-            Forma de retirada:
-            </label>
+//         containerCheckout.innerHTML= ` 
+//         <div class="controls"> 
+//                 <button onclick="closeCheckout()"><svg class="svg-inline--fa fa-chevron-left" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-left"></i> Font Awesome fontawesome.com --></button>
+//                 <button onclick="closeCheckout()"><svg class="svg-inline--fa fa-xmark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg><!-- <i class="fa-solid fa-xmark"></i> Font Awesome fontawesome.com --></button>  
+//             </div>
+//         <div class="content"><h2>Finalizar Pedido </h2> </div>
+//         <form>
+//         <div>
+//             <label>
+//             Forma de retirada:
+//             </label>
             
 
-            <div class="select">
-            <img src="assets/images/inputs/archive.png" style="margin-top: 16px;"/>
+//             <div class="select">
+//             <img src="assets/images/inputs/archive.png" style="margin-top: 16px;"/>
 
-                <select onchange="formaRetirada()" id="selectCheckout" > 
+//                 <select onchange="formaRetirada()" id="selectCheckout" > 
 
-                    <option value="1">Selecione a forma de retirada</option>
-                    <option value="balcao">Balcão</option>
-                    <option value="mesa">Mesa</option>
-                </select>
-            </div>
-            <div class="select"  style="display:none;">
-            <img src="assets/images/inputs/mesa.png" style="margin-top: 16px;"/ >
+//                     <option value="1">Selecione a forma de retirada</option>
+//                     <option value="balcao">Balcão</option>
+//                     <option value="mesa">Mesa</option>
+//                 </select>
+//             </div>
+//             <div class="select"  style="display:none;">
+//             <img src="assets/images/inputs/mesa.png" style="margin-top: 16px;"/ >
 
-            <select  id="selectMesaCheckout" > 
+//             <select  id="selectMesaCheckout" > 
 
-                <option value="0">Selecione a Mesa</option>
-                <option value="1">01</option>
-                <option value="2">02</option>
-                <option value="3">03</option>
-                <option value="4">04</option>
-                <option value="5">05</option>
-                <option value="6">06</option>
-                <option value="7">07</option>
-                <option value="8">08</option>
-                <option value="9">09</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-'              
-            </select>
-        </div>
-        </div>
-        <div style="position: relative;">
-            <label> 
-                Observações do Pedido:
-            </label>
-            <img src="assets/images/inputs/chat.png" style="margin-top: 38px;">
+//                 <option value="0">Selecione a Mesa</option>
+//                 <option value="1">01</option>
+//                 <option value="2">02</option>
+//                 <option value="3">03</option>
+//                 <option value="4">04</option>
+//                 <option value="5">05</option>
+//                 <option value="6">06</option>
+//                 <option value="7">07</option>
+//                 <option value="8">08</option>
+//                 <option value="9">09</option>
+//                 <option value="10">10</option>
+//                 <option value="11">11</option>
+//                 <option value="12">12</option>
+//                 <option value="13">13</option>
+//                 <option value="14">14</option>
+//                 <option value="15">15</option>
+//                 <option value="16">16</option>
+//                 <option value="17">17</option>
+//                 <option value="18">18</option>
+//                 <option value="19">19</option>
+//                 <option value="20">20</option>
+// '              
+//             </select>
+//         </div>
+//         </div>
+//         <div style="position: relative;">
+//             <label> 
+//                 Observações do Pedido:
+//             </label>
+//             <img src="assets/images/inputs/chat.png" style="margin-top: 38px;">
 
-            <textarea id="areaObs" placeholder="Digite observações do seu pedido"></textarea>
+//             <textarea id="areaObs" placeholder="Digite observações do seu pedido"></textarea>
             
-        </div>
-        <div id="mgg"></div>
-        <form>
+//         </div>
+//         <div id="mgg"></div>
+//         <form>
 
-        <div class="total"> 
-        Total da compra
-            `+totalCart.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) +` 
-            <button onclick="sendOrder(event)">Enviar Pedido  <i class="fa-brands fa-whatsapp"></i> </button> 
-        </div> 
+//         <div class="total"> 
+//         Total da compra
+//             `+totalCart.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) +` 
+//             <button onclick="sendOrder(event)">Enviar Pedido  <i class="fa-brands fa-whatsapp"></i> </button> 
+//         </div> 
 
                            
         
-        `;
+//         `;
         selectCheck=document.getElementById('selectCheckout')
         optionsCheck=selectCheck.options[selectCheck.selectedIndex].text
         retiradavalue=0
@@ -1318,15 +1318,26 @@ var categoriesContainer=document.getElementById('categories')
     formaRetirada=()=>{
        
         retiradavalue=document.getElementById('selectCheckout').value
-        mesaCheck=document.getElementById('selectMesaCheckout')
+        setMesa=document.getElementById('setMesa')
+
+       
 
         if(retiradavalue=='mesa'){
-            mesaCheck.parentNode.style.cssText="display:block"
-
+            setMesa.style.cssText="display:block" 
+        
+            
         }else if(retiradavalue=='balcao'){
-            mesaCheck.parentNode.style.cssText="display:none"
+            setMesa.style.cssText="display:none"
 
+           
         }
+
+        setMesa.addEventListener('focusout', function(e){
+            inpuMVaue=document.getElementById('inputMesa').value
+
+ 
+
+        })
 
    }
  
