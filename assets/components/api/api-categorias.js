@@ -31,6 +31,7 @@ data = [{
                 quantidade:0,
             },{
                 id:'151',
+                categoria:'porcoes',
                 name:'Porção Camarão a Dorê', 
                 price:80, 
                 img:'assets/images/produtos/camaraodore.png',
@@ -40,6 +41,7 @@ data = [{
                 
             },{
                 id:'152',
+                categoria:'porcoes',
                 name:'Porção Lula Dorê', 
                 price:80,
                 img:'assets/images/produtos/luladore.png',
@@ -48,6 +50,7 @@ data = [{
 
             },{
                 id:'153',
+                categoria:'porcoes',
                 name:'Porção Peixe Tilápia', 
                 img:'assets/images/produtos/tilapia.png',
 
@@ -57,12 +60,14 @@ data = [{
 
             },{
                 id:'154',
+                categoria:'porcoes',
                 name:'Porção Peixe Cação', 
                 img:'assets/images/produtos/cacao.png', 
                 price:70,
                 quantidade:0, 
             },{
                 id:'155',
+                categoria:'porcoes',
                 name:'Porção Peixe Pescada', 
                 img:'assets/images/produtos/pescada.png', 
                 price:70,
@@ -71,6 +76,7 @@ data = [{
 
             },{
                 id:'156',
+                categoria:'porcoes',
                 name:'Porção Peixe Merluza', 
                 img:'assets/images/produtos/merluza.png', 
                 price:70,
@@ -79,6 +85,7 @@ data = [{
 
             },{
                 id:'158',
+                categoria:'porcoes',
                 name:'Porção Peixe Porquinho', 
                 img:'assets/images/produtos/porquinho.png', 
                 price:70,
@@ -87,6 +94,7 @@ data = [{
 
             },{
                 id:'159',
+                categoria:'porcoes',
                 name:'Fritas', 
                 img:'assets/images/produtos/fritas.png', 
 
@@ -96,6 +104,7 @@ data = [{
 
             },{
                 id:'160',
+                categoria:'porcoes',
                 name:'Fritas com Queijo', 
                 img:'assets/images/produtos/fritasqueijo.png', 
 
@@ -105,6 +114,7 @@ data = [{
 
             },{
                 id:'161',
+                categoria:'porcoes',
                 name:'Porção Mandioca', 
                 img:'assets/images/produtos/mandioca.png', 
 
@@ -114,6 +124,7 @@ data = [{
 
             },{
                 id:'162',
+                categoria:'porcoes',
                 name:'Porção Mandioca com Queijo', 
                 img:'assets/images/produtos/mandiocaqueijo.png', 
 
@@ -123,6 +134,7 @@ data = [{
 
             },{
                 id:'164',
+                categoria:'porcoes',
                 name:'Porção Calabresa', 
                 img:'assets/images/produtos/calabresa.png', 
 
@@ -132,6 +144,7 @@ data = [{
 
             },{
                 id:'171',
+                categoria:'porcoes',
                 name:'Molho Extra', 
                 img:'assets/images/produtos/molhoextra.png', 
 
@@ -141,6 +154,7 @@ data = [{
 
             },{
                 id:'172',
+                categoria:'porcoes',
                 name:'Pão Extra', 
                 img:'assets/images/produtos/paoextra.png', 
 
@@ -589,6 +603,8 @@ data = [{
             },{
                 id:'3',
                 key:'',
+                categoria:'bebidas',
+                
                 name:'H20 Limão', 
                 img:'assets/images/produtos/bebidah2o.png',  
                 price:8,
@@ -596,6 +612,8 @@ data = [{
             },{
                 id:'5',
                 key:'',
+                categoria:'bebidas',
+                
                 name:'Refrigerante lata', 
                 img:'assets/images/produtos/bebidarefrilata.png',  
                 price:7,
@@ -603,6 +621,8 @@ data = [{
             },{
                 id:'6',
                 key:'',
+                categoria:'bebidas',
+                
                 name:'Refrigerante Zero lata ', 
                 img:'assets/images/produtos/bebidarefrizerolata.png',  
                 price:7,
@@ -610,6 +630,8 @@ data = [{
             },{
                 id:'7',
                 key:'',
+                categoria:'bebidas',
+                
                 name:'Schweppes', 
                 img:'assets/images/produtos/bebidasweppeslata.png',  
                 price:8,
@@ -617,6 +639,8 @@ data = [{
             },{
                 id:'8',
                 key:'',
+                categoria:'bebidas',
+                
                 name:'Tônica', 
                 img:'assets/images/produtos/bebidatonicalata.png',  
                 price:8,
@@ -624,6 +648,8 @@ data = [{
             },{
                 id:'9',
                 key:'',
+                categoria:'bebidas',
+                
                 name:'Copo c/ Gelo', 
                 img:'assets/images/produtos/bebidacopogelo.png',  
                 price:5,
@@ -631,6 +657,8 @@ data = [{
             },{
                 id:'10',
                 key:'',
+                categoria:'bebidas',
+                
                 name:'Copo c/ Gelo e Limão', 
                 img:'assets/images/produtos/bebidacopogelolimao.png',  
                 price:5,
@@ -638,6 +666,8 @@ data = [{
             },{
                 id:'11',
                 key:'',
+                categoria:'bebidas',
+                
                 name:'Copo Limão e Sal', 
                 img:'assets/images/produtos/bebidacopolimaosal.png',  
                 price:5,
@@ -645,6 +675,8 @@ data = [{
             },{
                 id:'20',
                 key:'',
+                categoria:'bebidas',
+                
                 name:'Suco Natural', 
                 img:'assets/images/produtos/bebidasuconatural.png',  
                 price:15,
@@ -652,6 +684,8 @@ data = [{
             },{
                 id:'21',
                 key:'',
+                categoria:'bebidas',
+                
                 name:'Suco natural com 2 Frutas', 
                 img:'assets/images/produtos/bebidasucoduasfrutas.png',  
                 price:18,
@@ -659,6 +693,8 @@ data = [{
             },{
                 id:'22',
                 key:'',
+                categoria:'bebidas',
+                
                 name:'Suco Natural com Leite Condensado', 
                 img:'assets/images/produtos/bebidasuconaturalleitec.png',  
                 price:18,
@@ -666,6 +702,8 @@ data = [{
             },{
                 id:'25',
                 key:'',
+                categoria:'bebidas',
+                
                 name:'Suco de Polpa', 
                 img:'assets/images/produtos/bebidasucopolpa.png',  
                 price:12,
@@ -673,6 +711,8 @@ data = [{
             },{
                 id:'26',
                 key:'',
+                categoria:'bebidas',
+                
                 name:'Suco de Polpa com Leite condensado', 
                 img:'assets/images/produtos/bebidasucopolpaleitec.png',  
                 price:14,
@@ -680,6 +720,8 @@ data = [{
             },{
                 id:'27',
                 key:'',
+                categoria:'bebidas',
+                
                 name:'Coco Gelado', 
                 img:'assets/images/produtos/bebidascocogelado.png',  
                 price:10,
@@ -691,12 +733,16 @@ data = [{
             name:'Cervejas', 
             products:[{
                 id:'130',
+                categoria:'bebidas',
+
                 name:'Cerveja Skol / Brahma Lata', 
                 img:'assets/images/produtos/cervejalatas.png',  
                 price:7, 
                 quantidade:0,
             },{
                 id:'131',
+                categoria:'bebidas',
+
                 name:'Serra Malte / Original / Brahma Duplo ', 
                 img:'assets/images/produtos/cervejaduplolata.png',  
                 price:8, 
@@ -704,6 +750,8 @@ data = [{
 
             },{
                 id:'132',
+                categoria:'bebidas',
+
                 name:'Cerveja Heineken / Bud / Stella Lata', 
                 img:'assets/images/produtos/cervejabudlata.png',  
                 price:10,
@@ -711,6 +759,8 @@ data = [{
 
             },{
                 id:'133',
+                categoria:'bebidas',
+
                 name:'Cerveja Corona / Heineken Long Neck', 
                 img:'assets/images/produtos/cervejalong.png',  
                 price:12.99,
@@ -718,6 +768,8 @@ data = [{
 
             },{
                 id:'134',
+                categoria:'bebidas',
+
                 name:'Cerveja Bud / Stella Long Neck', 
                 img:'assets/images/produtos/cervejabudestellalongneck.png',  
                 price:12,
@@ -725,6 +777,8 @@ data = [{
 
             },{
                 id:'135',
+                categoria:'bebidas',
+
                 name:'Cerveja sem alcool Long Neck ', 
                 img:'assets/images/produtos/cervejaheinekensalcoollongneck.png',  
                 price:12.99,
@@ -732,6 +786,8 @@ data = [{
 
             },{
                 id:'191',
+                categoria:'bebidas',
+
                 name:'Red Bull Energético', 
                 img:'assets/images/produtos/cervejaredbull.png',  
                 price:15,
@@ -739,6 +795,8 @@ data = [{
 
             },{
                 id:'192',
+                categoria:'bebidas',
+
                 name:'Monster Energético', 
                 img:'assets/images/produtos/cervejamonster.png',  
                 price:15,
