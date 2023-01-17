@@ -1083,8 +1083,7 @@ var categoriesContainer=document.getElementById('categories')
                
                 <div id="`+tabContentMap.id +`" class="tabcontent">  
                 </div>
-            `;
-            console.log(tabContentMap.name)
+            `; 
             var Contentsubs=document.getElementById(tabContentMap.id)
            
           innitProd=tabContentMap.products.map((productsMap)=>{  
@@ -1160,8 +1159,6 @@ var categoriesContainer=document.getElementById('categories')
       input=document.getElementById(inputProd)
       inputSearch=document.getElementById(inputProd+'search')
       
-    console.log(ProdThis)
-    console.log(inputProd)
  
     data.map((apiData)=>{   
         apiData.itens.map((itensMap)=>{     
@@ -1407,7 +1404,19 @@ var categoriesContainer=document.getElementById('categories')
             inpuMVaue=document.getElementById('inputMesa').value
 
  
+             
+            if (typeof(Storage) !== "undefined") { 
+                
+                   setminhamesa= localStorage.setItem("minhamesa",inpuMVaue);
+                
+                    if(setminhamesa){
+                        getminhamesa=JSON.parse(localStorage.getItem("minhamesa"))
+                        console.log(getminhamesa)
+                    } 
 
+              } else {
+                // Sorry! No Web Storage support..
+              }
         })
 
    }

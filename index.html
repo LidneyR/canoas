@@ -134,9 +134,9 @@
     <div class="menu">
         <ul>
           
-            <button><img src="assets/images/UserWhite.png" alt="" srcset=""></button> 
+            <!-- <button><img src="assets/images/UserWhite.png" alt="" srcset=""></button>  -->
              <button id="cartPreview"><img src="assets/images/shopping-cart.png" alt="" srcset=""></button>
-            <button><img src="assets/images/menu.png" alt="" srcset=""></button>
+            <!-- <button><img src="assets/images/menu.png" alt="" srcset=""></button> -->
         </ul>
     </div>
 
@@ -213,15 +213,7 @@
  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 
  <script type="module">
- //  import firebase from "firebase/app";
- //  import "firebase/firestore";    
  
- //  const firebase = require("firebase");
-//  commits
- // Required for side-effects
- // require("firebase/firestore");
- // TODO: Replace the following with your app's Firebase project configuration
- // See: https://firebase.google.com/docs/web/learn-more#config-object
  const firebaseConfig = {
   apiKey: "AIzaSyAyxC6S9lIs2q6MXPJzB4rpjod3HbRXJgU",
   authDomain: "harmonyfoodapp.firebaseapp.com",
@@ -234,14 +226,13 @@
  }; 
 
  // Initialize Firebase
- firebase.initializeApp(firebaseConfig);
-
+ firebase.initializeApp(firebaseConfig); 
 
  // Initialize Cloud Firestore and get a reference to the service
  const db = firebase.firestore();
 
 // PROTOTIPO DE DADOS
- const dados=[{
+ const dadosEstrutura=[{
     mesa:"20",
     orders:[{
       idPedido:"67253",
@@ -277,11 +268,11 @@
  console.log(inpuMVaue)
  console.log(prodsSelct)
 
- 
- db.collection('pedidos').add({ 
+  
+ db.collection('vendasemcurso').add({ 
  
     mesa:inpuMVaue,
-    orders:[{idPedido:"67253",itens:prodsSelct } 
+    orders:[{idPedido:Math.random() * 2000,itens:prodsSelct } 
   
   
   ]
