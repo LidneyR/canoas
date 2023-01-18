@@ -7,7 +7,7 @@ input,select {
     height: 42px;
     margin: 2px 0;
     /* padding: 0 1em; */
-    padding-left: 36px;
+    /* padding-left: 36px; */
     color: #73859E;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 12px;
@@ -26,18 +26,20 @@ select {
 
 input:focus-visible {
     outline: -webkit-focus-ring-color auto 0px;
+   
+
 }
 
-input::placeholder,select::placeholder  {
+input::placeholder  {
     font-weight: bold;
     opacity: .5;
-    color:#8B9398;
-    padding-left: 0%;
+    color:#8B9398; 
     margin-left: 5%;
     opacity: 1;
     font-weight: 300;
-    font-family: 'Lexend Deca', sans-serif;
-
-  
+    font-family: 'Lexend Deca', sans-serif; 
+    padding-left: 36px; 
    
 }
+
+ 
