@@ -9,29 +9,24 @@ data = [{
             name:'Porções', 
             products:[{
                 id:'175',
-                categoria:'porcoes',  
                 name:'Porção Camarão Rosa Paulista', 
                 price:150, 
                 img:'assets/images/produtos/camaraorosapaulista.png',
                 quantidade:0,
             },{
                 id:'180',
-                categoria:'porcoes', 
                 name:'Porção Camarão Rosa Dorê', 
                 price:130, 
                 img:'assets/images/produtos/camaraorosadore.png',
                 quantidade:0,
             },{
                 id:'150',
-                categoria:'porcoes',
-
                 name:'Porção Camarão Paulista', 
                 price:100, 
                 img:'assets/images/produtos/camaraopaulista.png',
                 quantidade:0,
             },{
                 id:'151',
-                categoria:'porcoes',
                 name:'Porção Camarão a Dorê', 
                 price:80, 
                 img:'assets/images/produtos/camaraodore.png',
@@ -41,7 +36,6 @@ data = [{
                 
             },{
                 id:'152',
-                categoria:'porcoes',
                 name:'Porção Lula Dorê', 
                 price:80,
                 img:'assets/images/produtos/luladore.png',
@@ -50,7 +44,6 @@ data = [{
 
             },{
                 id:'153',
-                categoria:'porcoes',
                 name:'Porção Peixe Tilápia', 
                 img:'assets/images/produtos/tilapia.png',
 
@@ -60,14 +53,15 @@ data = [{
 
             },{
                 id:'154',
-                categoria:'porcoes',
                 name:'Porção Peixe Cação', 
-                img:'assets/images/produtos/cacao.png', 
+                img:'assets/images/produtos/cacao.png',
+
                 price:70,
-                quantidade:0, 
+                quantidade:0,
+
+
             },{
                 id:'155',
-                categoria:'porcoes',
                 name:'Porção Peixe Pescada', 
                 img:'assets/images/produtos/pescada.png', 
                 price:70,
@@ -76,7 +70,6 @@ data = [{
 
             },{
                 id:'156',
-                categoria:'porcoes',
                 name:'Porção Peixe Merluza', 
                 img:'assets/images/produtos/merluza.png', 
                 price:70,
@@ -85,7 +78,6 @@ data = [{
 
             },{
                 id:'158',
-                categoria:'porcoes',
                 name:'Porção Peixe Porquinho', 
                 img:'assets/images/produtos/porquinho.png', 
                 price:70,
@@ -94,7 +86,6 @@ data = [{
 
             },{
                 id:'159',
-                categoria:'porcoes',
                 name:'Fritas', 
                 img:'assets/images/produtos/fritas.png', 
 
@@ -104,7 +95,6 @@ data = [{
 
             },{
                 id:'160',
-                categoria:'porcoes',
                 name:'Fritas com Queijo', 
                 img:'assets/images/produtos/fritasqueijo.png', 
 
@@ -114,7 +104,6 @@ data = [{
 
             },{
                 id:'161',
-                categoria:'porcoes',
                 name:'Porção Mandioca', 
                 img:'assets/images/produtos/mandioca.png', 
 
@@ -124,7 +113,6 @@ data = [{
 
             },{
                 id:'162',
-                categoria:'porcoes',
                 name:'Porção Mandioca com Queijo', 
                 img:'assets/images/produtos/mandiocaqueijo.png', 
 
@@ -134,7 +122,6 @@ data = [{
 
             },{
                 id:'164',
-                categoria:'porcoes',
                 name:'Porção Calabresa', 
                 img:'assets/images/produtos/calabresa.png', 
 
@@ -144,7 +131,6 @@ data = [{
 
             },{
                 id:'171',
-                categoria:'porcoes',
                 name:'Molho Extra', 
                 img:'assets/images/produtos/molhoextra.png', 
 
@@ -154,7 +140,6 @@ data = [{
 
             },{
                 id:'172',
-                categoria:'porcoes',
                 name:'Pão Extra', 
                 img:'assets/images/produtos/paoextra.png', 
 
@@ -182,80 +167,79 @@ data = [{
             products:[{
                 id:'90',
                 name:'Pastel Carne ', 
-                
-                img:'assets/images/produtos/pastelcarne.png',   
-                price:12.99,
-                quantidade:0,
+                img:'assets/images/produtos/pastelcarne.png',  
 
+                price:14,
+                quantidade:0,
             },{
                 id:'91',
                 name:'Pastel Queijo', 
                 img:'assets/images/produtos/pastelqueijo.png',  
 
-                price:12.99,
+                price:14,
                 quantidade:0,
             },{
                 id:'92',
                 name:'Pastel Bauru', 
                 img:'assets/images/produtos/pastelbauru.png',  
 
-                price:12.99,
+                price:14,
                 quantidade:0,
             },{
                 id:'93',
                 name:'Pastel Calabresa', 
                 img:'assets/images/produtos/pastelcalabresa.png',  
 
-                price:12.99,
+                price:14,
                 quantidade:0,
             },{
                 id:'94',
                 name:'Pastel Frango', 
                 img:'assets/images/produtos/pastelfrango.png',  
 
-                price:12.99,
+                price:14,
                 quantidade:0,
             },{
                 id:'95',
                 name:'Pastel Pizza', 
                 img:'assets/images/produtos/pastelpizza.png',  
 
-                price:12.99,
+                price:14,
                 quantidade:0,
             },{
                 id:'96',
                 name:'Pastel Brócolis', 
                 img:'assets/images/produtos/pastelbrocolis.png',  
 
-                price:12.99,
+                price:14,
                 quantidade:0,
             },{
                 id:'98',
                 name:'Pastel Carne com Queijo', 
                 img:'assets/images/produtos/pastelcarnequeijo.png',  
 
-                price:14,
+                price:16,
                 quantidade:0,
             },{
                 id:'99',
                 name:'Pastel Brócolis com Queijo', 
                 img:'assets/images/produtos/pastelbrocolisqueijo.png',  
 
-                price:14,
+                price:16,
                 quantidade:0,
             },{
                 id:'100',
                 name:'Pastel Frango com Catupiry', 
                 img:'assets/images/produtos/pastelfrangocatupiry.png',  
 
-                price:14,
+                price:16,
                 quantidade:0,
             },{
                 id:'101',
                 name:'Pastel Palmito', 
                 img:'assets/images/produtos/pastelpalmito.png',  
 
-                price:12.99,
+                price:14,
                 quantidade:0,
             },{
                 id:'102',
@@ -587,24 +571,18 @@ data = [{
                 key:'',
                 name:'Água sem Gás', 
                 img:'assets/images/produtos/bebidaaguasgas.png',  
-                categoria:'bebidas',
-
-                price:4,
+                price:5,
                 quantidade:0, 
             },{
                 id:'2',
                 key:'',
                 name:'Água com Gás', 
-                categoria:'bebidas',
-
                 img:'assets/images/produtos/bebidaaguacgas.png',  
                 price:5,
                 quantidade:0, 
             },{
                 id:'3',
                 key:'',
-                categoria:'bebidas',
-                
                 name:'H20 Limão', 
                 img:'assets/images/produtos/bebidah2o.png',  
                 price:8,
@@ -612,8 +590,6 @@ data = [{
             },{
                 id:'5',
                 key:'',
-                categoria:'bebidas',
-                
                 name:'Refrigerante lata', 
                 img:'assets/images/produtos/bebidarefrilata.png',  
                 price:7,
@@ -621,8 +597,6 @@ data = [{
             },{
                 id:'6',
                 key:'',
-                categoria:'bebidas',
-                
                 name:'Refrigerante Zero lata ', 
                 img:'assets/images/produtos/bebidarefrizerolata.png',  
                 price:7,
@@ -630,8 +604,6 @@ data = [{
             },{
                 id:'7',
                 key:'',
-                categoria:'bebidas',
-                
                 name:'Schweppes', 
                 img:'assets/images/produtos/bebidasweppeslata.png',  
                 price:8,
@@ -639,8 +611,6 @@ data = [{
             },{
                 id:'8',
                 key:'',
-                categoria:'bebidas',
-                
                 name:'Tônica', 
                 img:'assets/images/produtos/bebidatonicalata.png',  
                 price:8,
@@ -648,8 +618,6 @@ data = [{
             },{
                 id:'9',
                 key:'',
-                categoria:'bebidas',
-                
                 name:'Copo c/ Gelo', 
                 img:'assets/images/produtos/bebidacopogelo.png',  
                 price:5,
@@ -657,8 +625,6 @@ data = [{
             },{
                 id:'10',
                 key:'',
-                categoria:'bebidas',
-                
                 name:'Copo c/ Gelo e Limão', 
                 img:'assets/images/produtos/bebidacopogelolimao.png',  
                 price:5,
@@ -666,8 +632,6 @@ data = [{
             },{
                 id:'11',
                 key:'',
-                categoria:'bebidas',
-                
                 name:'Copo Limão e Sal', 
                 img:'assets/images/produtos/bebidacopolimaosal.png',  
                 price:5,
@@ -675,8 +639,6 @@ data = [{
             },{
                 id:'20',
                 key:'',
-                categoria:'bebidas',
-                
                 name:'Suco Natural', 
                 img:'assets/images/produtos/bebidasuconatural.png',  
                 price:15,
@@ -684,8 +646,6 @@ data = [{
             },{
                 id:'21',
                 key:'',
-                categoria:'bebidas',
-                
                 name:'Suco natural com 2 Frutas', 
                 img:'assets/images/produtos/bebidasucoduasfrutas.png',  
                 price:18,
@@ -693,8 +653,6 @@ data = [{
             },{
                 id:'22',
                 key:'',
-                categoria:'bebidas',
-                
                 name:'Suco Natural com Leite Condensado', 
                 img:'assets/images/produtos/bebidasuconaturalleitec.png',  
                 price:18,
@@ -702,8 +660,6 @@ data = [{
             },{
                 id:'25',
                 key:'',
-                categoria:'bebidas',
-                
                 name:'Suco de Polpa', 
                 img:'assets/images/produtos/bebidasucopolpa.png',  
                 price:12,
@@ -711,8 +667,6 @@ data = [{
             },{
                 id:'26',
                 key:'',
-                categoria:'bebidas',
-                
                 name:'Suco de Polpa com Leite condensado', 
                 img:'assets/images/produtos/bebidasucopolpaleitec.png',  
                 price:14,
@@ -720,8 +674,6 @@ data = [{
             },{
                 id:'27',
                 key:'',
-                categoria:'bebidas',
-                
                 name:'Coco Gelado', 
                 img:'assets/images/produtos/bebidascocogelado.png',  
                 price:10,
@@ -733,73 +685,57 @@ data = [{
             name:'Cervejas', 
             products:[{
                 id:'130',
-                categoria:'bebidas',
-
-                name:'Cerveja Skol / Brahma Lata', 
+                name:'Cerveja Skol / Brahma / Itaipava Lata', 
                 img:'assets/images/produtos/cervejalatas.png',  
-                price:7, 
+                price:6, 
                 quantidade:0,
             },{
                 id:'131',
-                categoria:'bebidas',
-
-                name:'Serra Malte / Original / Brahma Duplo ', 
+                name:'Cerveja Brahma Duplo / Império / Petra Lata', 
                 img:'assets/images/produtos/cervejaduplolata.png',  
                 price:8, 
                 quantidade:0,
 
             },{
                 id:'132',
-                categoria:'bebidas',
-
                 name:'Cerveja Heineken / Bud / Stella Lata', 
                 img:'assets/images/produtos/cervejabudlata.png',  
                 price:10,
                 quantidade:0, 
 
             },{
-                id:'133',
-                categoria:'bebidas',
-
+                id:'134',
                 name:'Cerveja Corona / Heineken Long Neck', 
                 img:'assets/images/produtos/cervejalong.png',  
-                price:12.99,
+                price:14,
                 quantidade:0, 
 
             },{
-                id:'134',
-                categoria:'bebidas',
-
+                id:'135',
                 name:'Cerveja Bud / Stella Long Neck', 
                 img:'assets/images/produtos/cervejabudestellalongneck.png',  
                 price:12,
                 quantidade:0, 
 
             },{
-                id:'135',
-                categoria:'bebidas',
-
+                id:'136',
                 name:'Cerveja sem alcool Long Neck ', 
                 img:'assets/images/produtos/cervejaheinekensalcoollongneck.png',  
-                price:12.99,
+                price:14,
                 quantidade:0, 
 
             },{
                 id:'191',
-                categoria:'bebidas',
-
                 name:'Red Bull Energético', 
                 img:'assets/images/produtos/cervejaredbull.png',  
-                price:15,
+                price:16,
                 quantidade:0, 
 
             },{
                 id:'192',
-                categoria:'bebidas',
-
                 name:'Monster Energético', 
                 img:'assets/images/produtos/cervejamonster.png',  
-                price:15,
+                price:16,
                 quantidade:0, 
 
             }]
@@ -816,7 +752,7 @@ data = [{
                 id:'141',
                 name:'Caipirinha Vodka Orloff', 
                 img:'assets/images/produtos/caipirinhaorloff.png',  
-                price:26, 
+                price:25, 
                 quantidade:0,
 
             },{
@@ -858,7 +794,7 @@ data = [{
                 id:'149',
                 name:'Caipirinha Saque', 
                 img:'assets/images/produtos/caipirinhasaque.png',  
-                price:22,
+                price:23,
                 quantidade:0, 
 
             }]
@@ -1030,7 +966,7 @@ data = [{
 ]
 var apiContainer=document.getElementById('api') 
 var categoriesContainer=document.getElementById('categories') 
-STATUSMESA=false
+
 
  getApi=(container)=>{
     container.innerHTML =` <div class="tab"> </div>`;
@@ -1083,15 +1019,14 @@ STATUSMESA=false
                
                 <div id="`+tabContentMap.id +`" class="tabcontent">  
                 </div>
-            `; 
+            `;
             var Contentsubs=document.getElementById(tabContentMap.id)
            
-          innitProd=tabContentMap.products.map((productsMap)=>{  
+          innitProd=  tabContentMap.products.map((productsMap)=>{  
             prods+=productsMap
- 
                     Contentsubs.innerHTML+= `  
                         <div class="produto">
-                                <img src="`+productsMap.img +`" alt="" ></img>
+                                <img src="`+productsMap.img +`" alt="" s></img>
                             <div class="prod-val">
                                 <h3 class="title-prod">`+productsMap.name +`</h3> 
                                 <span class="valor">`+productsMap.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})+`</span>
@@ -1159,6 +1094,8 @@ STATUSMESA=false
       input=document.getElementById(inputProd)
       inputSearch=document.getElementById(inputProd+'search')
       
+    console.log(ProdThis)
+    console.log(inputProd)
  
     data.map((apiData)=>{   
         apiData.itens.map((itensMap)=>{     
@@ -1211,9 +1148,6 @@ STATUSMESA=false
    + "*Itens Pedidos*" + "%0a" // Mensagem personalizada
    + "%0a" // Quebra de linhas
 
-
-  prodsSelct=[]
-
     data.map((apiData)=>{   
         apiData.itens.map((itensMap)=>{     
              itensMap.products.map((productsMap)=>{ 
@@ -1225,9 +1159,6 @@ STATUSMESA=false
                 prodMultiply=productsMap.price*productsMap.quantidade
                 totalCart+=prodMultiply
                 list+=productsMap.name 
-                prodsSelct.push(productsMap)
-                //  console.log(prodsSelct)
-
                
          
                 cartPreview.innerHTML= `    <div >     <button id="cartPreview" onclick="showCart()"><img src="assets/images/shopping-cart.png" alt=""></button> <span class="qtdIcon">`+cartQtd +` </span>   </div>  `;  
@@ -1266,7 +1197,11 @@ STATUSMESA=false
 
      }) 
      
-      
+     url+="%0a" + "%0a"
+        +"*Total da compra *"
+        + "%0a" // Quebra de linhas
+        +"*"+totalCart.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})+"*" 
+        + "%0a"+ "%0a" // Quebra de linhas
 
         document.getElementById("itensTotal").innerHTML+=  itensTotal
         cartContainer.innerHTML+= ` 
@@ -1278,12 +1213,107 @@ STATUSMESA=false
              <div class="total"> 
                 Total da compra
                 `+totalCart.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) +` 
-                <button onclick="getCheckout()">FINALIZAR PEDIDO <i class="fa-regular fa-rectangle-list"></i></button> 
+                <button onclick="getCheckout()">Finalizar Pedido <i class="fa-regular fa-rectangle-list"></i></button> 
             </div> 
         `; 
   }
 
+    getCheckout=()=>{ 
+        select=document.getElementById('selectValidate')
+        text = select.options[select.selectedIndex].text;
+        containerCheckout=document.getElementById('checkout')
+        containerCheckout.setAttribute("class", "checkout")
+        containerCheckout.innerHTML= ` 
+        <div class="controls"> 
+                <button onclick="closeCheckout()"><svg class="svg-inline--fa fa-chevron-left" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-left"></i> Font Awesome fontawesome.com --></button>
+                <button onclick="closeCheckout()"><svg class="svg-inline--fa fa-xmark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg><!-- <i class="fa-solid fa-xmark"></i> Font Awesome fontawesome.com --></button>  
+            </div>
+        <div class="content"><h2>Finalizar Pedido </h2> </div>
+        <form>
+        <div>
+            <label>
+            Forma de retirada:
+            </label>
+            
 
+            <div class="select">
+            <img src="assets/images/inputs/archive.png" style="margin-top: 16px;"/>
+
+                <select onchange="formaRetirada()" id="selectCheckout" > 
+
+                    <option value="1">Selecione a forma de retirada</option>
+                    <option value="balcao">Balcão</option>
+                    <option value="mesa">Mesa</option>
+                </select>
+            </div>
+            <div class="select"  style="display:none;">
+            <img src="assets/images/inputs/mesa.png" style="margin-top: 16px;"/ >
+
+            <select  id="selectMesaCheckout" > 
+
+                <option value="0">Selecione a Mesa</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+              
+            </select>
+        </div>
+        </div>
+        <div style="position: relative;">
+            <label> 
+                Observações do Pedido:
+            </label>
+            <img src="assets/images/inputs/chat.png" style="margin-top: 38px;">
+
+            <textarea id="areaObs" placeholder="Digite observações do seu pedido"></textarea>
+            
+        </div>
+        <div id="mgg"></div>
+        <form>
+
+        <div class="total"> 
+        Total da compra
+            `+totalCart.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) +` 
+            <button onclick="sendOrder(event)">Enviar Pedido  <i class="fa-brands fa-whatsapp"></i> </button> 
+        </div> 
+
+                           
+        
+        `;
+        selectCheck=document.getElementById('selectCheckout')
+        optionsCheck=selectCheck.options[selectCheck.selectedIndex].text
+        retiradavalue=0
+        // VALIDA CAMPO HOME
+        if(text=="Mesa"){
+            mesaCheck=document.getElementById('selectMesaCheckout')
+            mesaCheck.parentNode.style.cssText="display:block"
+        }
+
+        // VALIDA CAMPO CHECKOUT 
+        if(optionsCheck=="Mesa"){
+            
+            mesaCheck.parentNode.style.cssText="display:block"
+
+        }
+        containerCheckout.style.cssText="display:block"
+    }
+
+    formaRetirada=()=>{
+       
+        retiradavalue=document.getElementById('selectCheckout').value
+        mesaCheck=document.getElementById('selectMesaCheckout')
+
+        if(retiradavalue=='mesa'){
+            mesaCheck.parentNode.style.cssText="display:block"
+
+        }else if(retiradavalue=='balcao'){
+            mesaCheck.parentNode.style.cssText="display:none"
+
+        }
+
+   }
+ 
     sendOrder=(event)=>{
         event.preventDefault() 
     
