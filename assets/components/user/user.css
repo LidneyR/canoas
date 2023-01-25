@@ -59,7 +59,7 @@
   /* Custom Select wrapper */
  
   /* Arrow */
-  /* .select::after {
+  .select::after {
     content: '\25BC';
     position: absolute;
     top: inherit;
@@ -71,7 +71,7 @@
     font-size: 8px;
     color: #f39c12;
 
-  } */
+  }
   .user  .select::after {
     padding:3px;
     right: 10px;
