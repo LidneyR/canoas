@@ -1,7 +1,8 @@
 formcheckout=document.getElementById('checkoutform')
 itensTotal=document.getElementById("totalfinesh")
 inpuMMesa=document.getElementById('inputMesa')
-
+whatsappId=document.getElementById('whatsappId')
+inpuMWhats=""
 getCheckout=()=>{ 
     select=document.getElementById('selectValidate')
     text = select.options[select.selectedIndex].text;
@@ -15,12 +16,12 @@ getCheckout=()=>{
     // VALIDA CAMPO HOME
     if(text=="Mesa"){
         mesaCheck=document.getElementById('selectMesaCheckout')
-       
+        
     }
 
     // VALIDA CAMPO CHECKOUT 
     if(optionsCheck=="Mesa"){ 
-        mesaCheck.parentNode.style.cssText="display:block"
+        mesaCheck.parentNode.style.cssText="display:flex"
 
     }
     containerCheckout.style.cssText="display:block"
@@ -33,51 +34,39 @@ formaRetirada=()=>{
     setMesa=document.getElementById('setMesa') 
 
     if(retiradavalue=='mesa'){
-        setMesa.style.cssText="display:block"  
+        setMesa.style.cssText="display:flex"   
+        whatsappId.style.cssText="display:none"  
 
-        if(localStorage.getItem("minhamesa")){
-           
-                alert('Continue comprando para mesa '+getminhamesa+', ainda está aberta!')
-            
-            
-        }
-        
     }else if(retiradavalue=='balcao'){
-        setMesa.style.cssText="display:none" 
+
+        setMesa.style.cssText="display:none"  
+        whatsappId.style.cssText="display:block"  
+        inpuMVaue=0
     }
 
     //Mesa Digitada
     setMesa.addEventListener('focusout', function(e){
-
-        inpuMVaue=document.getElementById('inputMesa').value
-        setminhamesa=localStorage.setItem("minhamesa",inpuMVaue);
-        getminhamesa=JSON.parse(localStorage.getItem("minhamesa"))
-              
-        if(STATUSMESA==false){
-            
-            STATUSMESA=true
-            console.log(getminhamesa)
-            itensTotal.innerHTML+=`<div class='flagMesa'>`+getminhamesa+` </div>`;
-            inpuMVaue.value=getminhamesa
-        }   
+        
+        inpuMVaue=document.getElementById('inputMesa').value.toString()  
           
     })
 
+    //whats Digitado
+    whatsappId.addEventListener('focusout', function(e){
+              inpuMWhats=e.target.value.toString()  
+          
+    })
 }
 
 
 window.onload=()=>{
+    
+    databaseMesas=[] 
+    databaseDelivery=[] 
+    recebePedidos=[]
 
-  
-   if(localStorage.getItem("minhamesa")){
-    getminhamesa=JSON.parse(localStorage.getItem("minhamesa"))
-    console.log(getminhamesa)
-    itensTotal.innerHTML+=`<div class='flagMesa'>Mesa`+getminhamesa+` </div>`;
-    console.log(inpuMMesa)
-
-    inpuMMesa.value=getminhamesa
-    inpuMMesa.setAttribute("disabled","")
-    inpuMVaue=getminhamesa
-   }
+    const date = new Date();
+    // console.log(date)
+   
  
 }

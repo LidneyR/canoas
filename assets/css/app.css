@@ -3,6 +3,9 @@ body {
     background-color: #FB6E3B;
     margin: 0px;
     overflow: hidden;
+    max-width: 800px;
+ 
+    margin: 0 auto;
 }
 
 button {
@@ -37,4 +40,9 @@ h2 {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+@media(min-width:600px){
+    .banners{
+        display: none;
+    }
 }

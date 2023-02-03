@@ -22,7 +22,7 @@
 .validation .content {
     width: 100%;
     margin: auto;
-    padding-top: 40%;
+    padding-top: 20%;
     transition: .3s;
 
 }
@@ -55,17 +55,17 @@
 
 .validation form {
     width: 85%;
-    margin: 0px auto;
-    position: absolute;
-    bottom: 50px;
-    left: 20px;
+    margin: 70px auto;
+    position: relative; 
+   
 }
 form img {
     margin-top: 15px;
     position: absolute;
     z-index: 99;
     width: 14px;
-    left: 14px;
+    left: 18px;
+    
 }select:invalid { color: red; }
 .validation button {
     width: 150px;
