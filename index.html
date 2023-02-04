@@ -275,35 +275,11 @@
  // Initialize Cloud Firestore and get a reference to the service
  const db = firebase.firestore();
 
-// PROTOTIPO DE DADOS...
- const dadosEstrutura=[{
-    mesa:"20",
-    orders:[{
-      idPedido:"67253",
-      itens:[{
-            id:'175',
-            name:'Porção Camarão Rosa Paulista', 
-            price:150, 
-            img:'assets/images/produtos/camaraorosapaulista.png',
-            quantidade:0,
-      }]  },{
-      idPedido:"382973",
-      itens:[{
-            id:'175',
-            name:'Porção Camarão Rosa Paulista', 
-            price:150, 
-            img:'assets/images/produtos/camaraorosapaulista.png',
-            quantidade:0,
-      }]  }
-  
-  
-  
-  ]
- }]
- 
+
  let btnSubmit=document.getElementById('submitCheck')
  let list = document.getElementById("notifications") 
  let form = document.querySelector(".checkoutform")
+  const horaAtual=relogio()
 
 
  //UPDATE
@@ -334,7 +310,6 @@
                 orders:recebePedidos  //<==================Pedidos Recebidos
               })
 
-              const horaAtual=relogio()
               
               db.collection('notificacoes').doc(horaAtual).set({  
                 mesa:parseInt(inpuMVaue),
@@ -347,9 +322,9 @@
     
               // prodsSelct=[]  
               form.reset() 
-              setTimeout(function(){
-                  location.reload()
-              }, 500);
+              // setTimeout(function(){
+              //     location.reload()
+              // }, 500);
 
       }else if(inpuMWhats!="") {
         
@@ -392,9 +367,9 @@
                       alert('Pedido Enviado ao Restaurante')   
     
                       form.reset() 
-                      setTimeout(function(){
-                          location.reload()
-                      }, 500);
+                      // setTimeout(function(){
+                      //     location.reload()
+                      // }, 500);
 
 
         }else{
@@ -420,9 +395,9 @@
             
               form.reset()
              
-              setTimeout(function(){
-                  location.reload()
-              }, 500);
+              // setTimeout(function(){
+              //     location.reload()
+              // }, 500);
 
         }
      
