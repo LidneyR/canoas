@@ -293,7 +293,6 @@
             
                       baseMap.orders.map((mapOrders)=>{ 
                           recebePedidos.push(mapOrders) 
-
                       }) 
                   }
 
@@ -415,7 +414,8 @@
  
         }); 
     }, (error) => {
-        // ...
+            console.log('Erro Notificações')
+
     });
 
  //READ DELIVERYS 
@@ -425,6 +425,8 @@
           databaseDelivery.push(doc.data())
         }); 
     }, (error) => {
+
+      console.log('Erro Notificações')
         // ...
     });
 
