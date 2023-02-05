@@ -3,6 +3,13 @@ itensTotal=document.getElementById("totalfinesh")
 inpuMMesa=document.getElementById('inputMesa')
 whatsappId=document.getElementById('whatsappId')
 inpuMWhats=""
+
+function showNumber(){
+
+    var n=100;
+    return n+=1
+  
+}
 getCheckout=()=>{ 
     select=document.getElementById('selectValidate')
     text = select.options[select.selectedIndex].text;
@@ -63,11 +70,12 @@ formaRetirada=()=>{
 window.onload=()=>{
     
     databaseMesas=[] 
-    databaseDelivery=[] 
+    ordersLabDeliveryArr=[] 
     recebePedidos=[]
 
     const date = new Date();
     // console.log(date)
+
    
  
 }

@@ -280,7 +280,8 @@
  let list = document.getElementById("notifications") 
  let form = document.querySelector(".checkoutform")
  const horaAtual=relogio()
-
+ const horaReplace=horaAtual.replace(/[^0-9]/g, '')
+ let databaseDeliveryArr=[]
 
  //UPDATE
  form.addEventListener('submit', function(e){
@@ -310,7 +311,7 @@
               })
 
               
-              db.collection('notificacoes').doc().set({  
+              db.collection('notificacoes').doc(horaReplace).set({  
                 mesa:parseInt(inpuMVaue),
                 orders:allordersBuy,  //<==================Pedidos Recebidos
                 hora:horaAtual
@@ -318,18 +319,17 @@
          
               alert('Pedido Enviado ao Restaurante')  
 
-    
-              // prodsSelct=[]  
+     
               form.reset() 
-              // setTimeout(function(){
-              //     location.reload()
-              // }, 500);
+              setTimeout(function(){
+                  location.reload()
+              }, 1500);
 
       }else if(inpuMWhats!="") {
         
  
  
-        if(databaseDelivery.length>0){
+        if(databaseDeliveryArr.length>0){
 
              databaseDelivery.map((mapDataDelivery)=>{ 
                   let validaName=mapDataDelivery.name===inputUserName.toLowerCase() 
@@ -353,8 +353,9 @@
                             orders:recebePedidos  //<==================Pedidos Recebidos
                       }) 
 
+                      const horaAtual=relogio()
                          
-                      db.collection('notificacoes').doc().set({  
+                      db.collection('notificacoes').doc(horaReplace).set({  
                             "name":userNameString,
                             "whatsapp":inpuMWhats,
                             orders:allordersBuy,  //<==================Pedidos Recebidos
@@ -365,9 +366,9 @@
                       alert('Pedido Enviado ao Restaurante')   
     
                       form.reset() 
-                      // setTimeout(function(){
-                      //     location.reload()
-                      // }, 500);
+                      setTimeout(function(){
+                          location.reload()
+                      }, 1500);
 
 
         }else{
@@ -383,7 +384,7 @@
 
               const horaAtual=relogio()
               
-              db.collection('notificacoes').doc().set({  
+              db.collection('notificacoes').doc(horaReplace).set({  
                 "name":userNameString,
                 "whatsapp":inpuMWhats,
                 orders:allordersBuy,  //<==================Pedidos Recebidos
@@ -393,9 +394,9 @@
             
               form.reset()
              
-              // setTimeout(function(){
-              //     location.reload()
-              // }, 500);
+              setTimeout(function(){
+                  location.reload()
+              }, 1500);
 
         }
      
@@ -421,7 +422,7 @@
     const ordersLabDelivery=db.collection('delivery') 
     ordersLabDelivery.onSnapshot((snapshot) => {  
         snapshot.forEach((doc) => { 
-          databaseDelivery.push(doc.data())
+          databaseDeliveryArr.push(doc.data())
         }); 
     }, (error) => {
 
