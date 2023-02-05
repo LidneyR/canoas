@@ -279,7 +279,7 @@
  let btnSubmit=document.getElementById('submitCheck')
  let list = document.getElementById("notifications") 
  let form = document.querySelector(".checkoutform")
-  const horaAtual=relogio()
+ const horaAtual=relogio()
 
 
  //UPDATE
@@ -310,7 +310,7 @@
               })
 
               
-              db.collection('notificacoes').doc(horaAtual).set({  
+              db.collection('notificacoes').doc().set({  
                 mesa:parseInt(inpuMVaue),
                 orders:allordersBuy,  //<==================Pedidos Recebidos
                 hora:horaAtual
@@ -353,9 +353,8 @@
                             orders:recebePedidos  //<==================Pedidos Recebidos
                       }) 
 
-                      const horaAtual=relogio()
                          
-                      db.collection('notificacoes').doc(horaAtual).set({  
+                      db.collection('notificacoes').doc().set({  
                             "name":userNameString,
                             "whatsapp":inpuMWhats,
                             orders:allordersBuy,  //<==================Pedidos Recebidos
@@ -384,7 +383,7 @@
 
               const horaAtual=relogio()
               
-              db.collection('notificacoes').doc(horaAtual).set({  
+              db.collection('notificacoes').doc().set({  
                 "name":userNameString,
                 "whatsapp":inpuMWhats,
                 orders:allordersBuy,  //<==================Pedidos Recebidos
