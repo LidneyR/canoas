@@ -331,7 +331,7 @@
  
         if(databaseDeliveryArr.length>0){
 
-             databaseDelivery.map((mapDataDelivery)=>{ 
+          databaseDeliveryArr.map((mapDataDelivery)=>{ 
                   let validaName=mapDataDelivery.name===inputUserName.toLowerCase() 
                       
                       if(validaName==true){ 
@@ -409,6 +409,7 @@
  //READ MESAS
     const ordersLab=db.collection('mesasOpen') 
     ordersLab.onSnapshot((snapshot) => {  
+      let databaseMesas=[]
         snapshot.forEach((doc) => { 
           databaseMesas.push(doc.data())
  

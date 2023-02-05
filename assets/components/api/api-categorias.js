@@ -975,7 +975,7 @@ data = [{
                 price:20, 
                 quantidade:0,
             },{
-                id:'107C',
+                id:Math.floor(Math.random() * 1000),
                 categoria:'bebidas',
 
                 name:'Batida Cachaça', 
