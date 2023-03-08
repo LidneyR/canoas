@@ -32,11 +32,8 @@
     <form action="">
       <h1>Faça seu pedido sem filas!</h1>
       <div class="mylabel">
-        <label style="
-          top: -2px;
-          height: 48px;
-          bottom: 0;
-          ">  <img src="assets/images/inputs/user.png" style="width: 16px;">
+        <label style=" top: -2px; height: 48px;bottom: 0;"> 
+           <img src="assets/images/inputs/user.png" style="width: 16px;">
         </label>
         <input id="userName" style="margin-bottom: 5px !important;" placeholder="Digite seu nome" type="text" required> 
       </div>
@@ -256,33 +253,32 @@
    e.preventDefault()  
    let idspedidosRecebidos=[]
    let pedidoAtual=[]
+   let btnSubmitOrder=e.submitter
 
+   
       if(inpuMVaue!=0){ 
+        btnSubmitOrder.setAttribute("disabled", true)
 
             let intMesaValue=String(parseInt(inpuMVaue))
-            console.log(intMesaValue)
+          
 
-              databaseMesas.map((baseMap)=>{ 
-                if(baseMap.mesa==intMesaValue){ //VERIFICA EXISTENCIA  
-                      baseMap.orders.map((mapOrders)=>{ 
-                          recebePedidos.push(mapOrders) 
-                          // console.log(mapOrders.idPedido) //id pedidos entregues
+                databaseMesas.map((baseMap)=>{ 
+                      if(baseMap.mesa==intMesaValue){ //VERIFICA EXISTENCIA  
+                          baseMap.orders.map((mapOrders)=>{ 
+                              recebePedidos.push(mapOrders) 
+                              // console.log(mapOrders.idPedido) //id pedidos entregues
 
-                      }) 
+                          }) 
 
-                  } 
- 
-              })
+                      }  
+                })
               
               allordersBuy.map((atualOrderMap)=>{
                 recebePedidos.push(atualOrderMap)
                 console.log(atualOrderMap.idPedido) //id pedido Atual
                 pedidoAtual.push(atualOrderMap.idPedido) 
 
-              })    
-
-              // inpuMVaue.
-
+              })     
               
               db.collection('mesasOpen').doc(intMesaValue).set({  
                 mesa:intMesaValue,
@@ -307,20 +303,20 @@
                            
                             pedidoAtual.map((mapIdAtual)=>{
                                 // console.log('idAtual',mapIdAtual)
-                              idspedidosRecebidos.map((recebidosMap)=>{
-                                // console.log('idAtual',recebidosMap)
-                            
-                                if(recebidosMap===mapIdAtual){
-                                   entregaPed=true
-                                   console.log(recebidosMap)  
-                                  //  alert(recebidosMap)
-                                }else{
-                             
-                                 entregaPed=false
+                                idspedidosRecebidos.map((recebidosMap)=>{
+                                  // console.log('idAtual',recebidosMap)
+                                  
+                                      if(recebidosMap===mapIdAtual){
+                                        entregaPed=true
+                                        console.log(recebidosMap)  
+                                        //  alert(recebidosMap)
+                                      }else{
+                                  
+                                      entregaPed=false
 
-                                }
-                                
-                              }) 
+                                      }
+                                      
+                                }) 
 
                             }) 
                               
@@ -337,7 +333,6 @@
                   alert('O restaurante recebeu seu pedido, aguarde!')
                   form.reset() 
                   // location.reload()
-
 
                 }else{
                   alert('Enviando novamente')
@@ -370,6 +365,7 @@
 
       }else if(inpuMWhats!="") {
         
+        btnSubmitOrder.setAttribute("disabled", true)
  
  
         if(databaseDeliveryArr.length>0){
@@ -436,9 +432,7 @@
 
 
 
-        }else{
-            // console.log("novo")  
-            // console.log('Primeira Compra')
+        }else{ 
 
               let userNameString=inputUserName.toLowerCase().replace(/\s/g, '+');
              
@@ -482,7 +476,7 @@
         }
      
       }else{
-        alert('Digite seu Whatsapp para ser notificado!')
+        alert('Prencha todos os campos!')
       } 
  
  })
@@ -510,7 +504,7 @@
         }); 
     }, (error) => {
 
-      console.log('Erro Notificações')
+        console.log('Erro Notificações')
         // ...
     });
 
