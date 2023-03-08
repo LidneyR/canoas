@@ -8,21 +8,21 @@ data = [{
             id:'1SC',
             name:'Porções', 
             products:[{
-                id:'175',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',  
                 name:'Porção Camarão Rosa Paulista', 
                 price:150, 
                 img:'assets/images/produtos/camaraorosapaulista.png',
                 quantidade:0,
             },{
-                id:'180',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes', 
                 name:'Porção Camarão Rosa Dorê', 
                 price:130, 
                 img:'assets/images/produtos/camaraorosadore.png',
                 quantidade:0,
             },{
-                id:'150',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',
 
                 name:'Porção Camarão Paulista', 
@@ -30,7 +30,7 @@ data = [{
                 img:'assets/images/produtos/camaraopaulista.png',
                 quantidade:0,
             },{
-                id:'151',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',
                 name:'Porção Camarão a Dorê', 
                 price:80, 
@@ -40,7 +40,7 @@ data = [{
 
                 
             },{
-                id:'152',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',
                 name:'Porção Lula Dorê', 
                 price:80,
@@ -49,7 +49,7 @@ data = [{
 
 
             },{
-                id:'153',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',
                 name:'Porção Peixe Tilápia', 
                 img:'assets/images/produtos/tilapia.png',
@@ -59,14 +59,14 @@ data = [{
 
 
             },{
-                id:'154',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',
                 name:'Porção Peixe Cação', 
                 img:'assets/images/produtos/cacao.png', 
                 price:70,
                 quantidade:0, 
             },{
-                id:'155',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',
                 name:'Porção Peixe Pescada', 
                 img:'assets/images/produtos/pescada.png', 
@@ -75,7 +75,7 @@ data = [{
 
 
             },{
-                id:'156',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',
                 name:'Porção Peixe Merluza', 
                 img:'assets/images/produtos/merluza.png', 
@@ -84,7 +84,7 @@ data = [{
 
 
             },{
-                id:'158',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',
                 name:'Porção Peixe Porquinho', 
                 img:'assets/images/produtos/porquinho.png', 
@@ -93,7 +93,7 @@ data = [{
 
 
             },{
-                id:'159',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',
                 name:'Fritas', 
                 img:'assets/images/produtos/fritas.png', 
@@ -103,7 +103,7 @@ data = [{
 
 
             },{
-                id:'160',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',
                 name:'Fritas com Queijo', 
                 img:'assets/images/produtos/fritasqueijo.png', 
@@ -113,7 +113,7 @@ data = [{
 
 
             },{
-                id:'161',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',
                 name:'Porção Mandioca', 
                 img:'assets/images/produtos/mandioca.png', 
@@ -123,7 +123,7 @@ data = [{
 
 
             },{
-                id:'162',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',
                 name:'Porção Mandioca com Queijo', 
                 img:'assets/images/produtos/mandiocaqueijo.png', 
@@ -133,7 +133,7 @@ data = [{
 
 
             },{
-                id:'164',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',
                 name:'Porção Calabresa', 
                 img:'assets/images/produtos/calabresa.png', 
@@ -143,7 +143,7 @@ data = [{
 
 
             },{
-                id:'171',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',
                 name:'Molho Extra', 
                 img:'assets/images/produtos/molhoextra.png', 
@@ -153,7 +153,7 @@ data = [{
 
 
             },{
-                id:'172',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'porcoes',
                 name:'Pão Extra', 
                 img:'assets/images/produtos/paoextra.png', 
@@ -168,7 +168,7 @@ data = [{
             id:'3',
             name:'Pastéis',
             products:[{
-                id:'90',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 
                 name:'Pastel Carne ', 
@@ -178,7 +178,7 @@ data = [{
                 quantidade:0,
 
             },{
-                id:'91',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 
                 name:'Pastel Queijo', 
@@ -187,7 +187,7 @@ data = [{
                 price:12.99,
                 quantidade:0,
             },{
-                id:'92',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 
                 name:'Pastel Bauru', 
@@ -196,7 +196,7 @@ data = [{
                 price:12.99,
                 quantidade:0,
             },{
-                id:'93',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 
                 name:'Pastel Calabresa', 
@@ -205,7 +205,7 @@ data = [{
                 price:12.99,
                 quantidade:0,
             },{
-                id:'94',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 
                 name:'Pastel Frango', 
@@ -214,7 +214,7 @@ data = [{
                 price:12.99,
                 quantidade:0,
             },{
-                id:'95',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 
                 name:'Pastel Pizza', 
@@ -223,7 +223,7 @@ data = [{
                 price:12.99,
                 quantidade:0,
             },{
-                id:'96',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 
                 name:'Pastel Brócolis', 
@@ -232,7 +232,7 @@ data = [{
                 price:12.99,
                 quantidade:0,
             },{
-                id:'98',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 
                 name:'Pastel Carne com Queijo', 
@@ -241,7 +241,7 @@ data = [{
                 price:14,
                 quantidade:0,
             },{
-                id:'99',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 
                 name:'Pastel Brócolis com Queijo', 
@@ -250,7 +250,7 @@ data = [{
                 price:14,
                 quantidade:0,
             },{
-                id:'100',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 
                 name:'Pastel Frango com Catupiry', 
@@ -259,7 +259,7 @@ data = [{
                 price:14,
                 quantidade:0,
             },{
-                id:'101',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 
                 name:'Pastel Palmito', 
@@ -268,7 +268,7 @@ data = [{
                 price:12.99,
                 quantidade:0,
             },{
-                id:'102',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 
                 name:'Pastel Camarão', 
@@ -283,7 +283,7 @@ data = [{
             id:'4',
             name:'Pastéis Doces',
             products:[{
-                id:'103',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 name:'Pastel Prestigio', 
                 img:'assets/images/produtos/pastelprestigio.png',  
@@ -291,7 +291,7 @@ data = [{
                 price:15,
                 quantidade:0,
             },{
-                id:Math.floor(Math.random() * 1000),
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 name:'Pastel Chocolate ou Nutella', 
                 img:'assets/images/produtos/pastelchocolatenutella.png',  
@@ -299,7 +299,7 @@ data = [{
                 price:15,
                 quantidade:0,
             },{
-                id:'105',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 name:'Pastel Chocolate com Banana', 
                 img:'assets/images/produtos/pastelchocolatebanana.png',  
@@ -307,7 +307,7 @@ data = [{
                 price:15,
                 quantidade:0,
             },{
-                id:'106',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 name:'Pastel Chocolate com Morango', 
                 img:'assets/images/produtos/pastelchocolatemorango.png',  
@@ -315,7 +315,7 @@ data = [{
                 price:15,
                 quantidade:0,
             },{
-                id:'107',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 name:'Pastel Leite Condensado c/ Coco', 
                 img:'assets/images/produtos/pastelleitecondensadococo.png',  
@@ -323,7 +323,7 @@ data = [{
                 price:15,
                 quantidade:0,
             },{
-                id:'108',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 name:'Pastel Nutella com Morango', 
                 img:'assets/images/produtos/pastelchocolatemorango.png',  
@@ -331,7 +331,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'109',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
                 name:'Pastel Nutella com Banana', 
                 img:'assets/images/produtos/pastelchocolatebanana.png',  
@@ -345,7 +345,7 @@ data = [{
             id:'5',
             name:'Tapiocas',
             products:[{
-                id:'60',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Carne', 
@@ -354,7 +354,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'61',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Queijo', 
@@ -363,7 +363,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'62',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Bauru', 
@@ -372,7 +372,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:Math.floor(Math.random() * 1000),
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Frango', 
@@ -381,7 +381,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'64',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Pizza', 
@@ -390,7 +390,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'65',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Brócolis', 
@@ -399,7 +399,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'67',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Carne com Queijo', 
@@ -408,7 +408,7 @@ data = [{
                 price:18,
                 quantidade:0,
             },{
-                id:'68',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Brócolis com Queijo', 
@@ -417,7 +417,7 @@ data = [{
                 price:18,
                 quantidade:0,
             },{
-                id:'69',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Frango com Queijo', 
@@ -426,7 +426,7 @@ data = [{
                 price:18,
                 quantidade:0,
             },{
-                id:'70',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Palmito', 
@@ -435,7 +435,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'71',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Camarão', 
@@ -449,7 +449,7 @@ data = [{
             id:'6',
             name:'Tapiocas Doces',
             products:[{
-                id:'72',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Prestigio', 
@@ -458,7 +458,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'73',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Chocolate ou Nutella', 
@@ -466,7 +466,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'74',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Chocolate com Banana', 
@@ -474,7 +474,7 @@ data = [{
                 price:17,
                 quantidade:0,
             },{
-                id:'75',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Chocolate com Morango', 
@@ -482,7 +482,7 @@ data = [{
                 price:17,
                 quantidade:0,
             },{
-                id:'76',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Leite Condensado c/ Coco', 
@@ -490,7 +490,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'77',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Nutella com Morango', 
@@ -498,7 +498,7 @@ data = [{
                 price:18,
                 quantidade:0,
             },{
-                id:'78',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'tapiocas',
                 
                 name:'Tapioca Nutella com Banana', 
@@ -512,7 +512,7 @@ data = [{
             id:'7',
             name:'Panquecas',
             products:[{
-                id:'30',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
 
                 name:'Panqueca Carne', 
@@ -521,7 +521,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'31',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 name:'Panqueca Queijo', 
                 categoria:'pasteis',
 
@@ -530,7 +530,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'32',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 name:'Panqueca Bauru', 
                 categoria:'pasteis',
 
@@ -539,7 +539,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'33',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 name:'Panqueca Frango', 
                 categoria:'pasteis',
 
@@ -548,7 +548,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'34',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
 
                 name:'Panqueca Pizza', 
@@ -557,7 +557,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'35',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
 
                 name:'Panqueca Brócolis', 
@@ -566,7 +566,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'37',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
 
                 name:'Panqueca Carne com Queijo', 
@@ -575,7 +575,7 @@ data = [{
                 price:18,
                 quantidade:0,
             },{
-                id:'38',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
 
                 name:'Panqueca Brócolis com Queijo', 
@@ -584,7 +584,7 @@ data = [{
                 price:18,
                 quantidade:0,
             },{
-                id:'39',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
 
                 name:'Panqueca Frango com Catupiry', 
@@ -593,7 +593,7 @@ data = [{
                 price:18,
                 quantidade:0,
             },{
-                id:'40',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
 
                 name:'Panqueca Palmito', 
@@ -602,7 +602,7 @@ data = [{
                 price:16,
                 quantidade:0,
             },{
-                id:'41',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'pasteis',
 
                 name:'Panqueca Camarão', 
@@ -617,7 +617,7 @@ data = [{
             id:'8Cm',
             name:'Mini Pizzas',
             products:[{
-                id:'176',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 name:'Pizza Mini Mussarela', 
                 img:'assets/images/produtos/minimussarela.png',  
                 categoria:'pasteis',
@@ -626,7 +626,7 @@ data = [{
                 price:15,
                 quantidade:0,
             },{
-                id:'177',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 name:'Pizza Mini Presunto e Queijo', 
                 categoria:'pasteis',
 
@@ -635,7 +635,7 @@ data = [{
                 price:15,
                 quantidade:0,
             },{
-                id:'178',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 name:'Pizza Mini Calabresa', 
                 categoria:'pasteis',
 
@@ -644,7 +644,7 @@ data = [{
                 price:15,
                 quantidade:0,
             },{
-                id:'179',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 name:'Pizza Mini Brócolis', 
                 categoria:'pasteis',
 
@@ -668,7 +668,7 @@ data = [{
             id:'4c',
             name:'Bebidas', 
             products:[{
-                id:'1',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 name:'Água sem Gás', 
                 img:'assets/images/produtos/bebidaaguasgas.png',  
@@ -677,7 +677,7 @@ data = [{
                 price:4,
                 quantidade:0, 
             },{ 
-                id:'2',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 name:'Água com Gás', 
                 categoria:'bebidas',
@@ -686,7 +686,7 @@ data = [{
                 price:5,                            
                 quantidade:0, 
             },{
-                id:Math.floor(Math.random() * 1000),
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 categoria:'bebidas', 
                 name:'H2O Limão', 
@@ -694,7 +694,7 @@ data = [{
                 price:8,
                 quantidade:0, 
             },{
-                id:Math.floor(Math.random() * 1000),
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 categoria:'bebidas',
                 
@@ -703,7 +703,7 @@ data = [{
                 price:7,
                 quantidade:0, 
             },{
-                id:Math.floor(Math.random() * 1000),
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 categoria:'bebidas',
                 
@@ -712,7 +712,7 @@ data = [{
                 price:7,
                 quantidade:0, 
             },{
-                id:Math.floor(Math.random() * 1000),
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 categoria:'bebidas',
                 
@@ -721,7 +721,7 @@ data = [{
                 price:8,
                 quantidade:0, 
             },{
-                id:'8',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 categoria:'bebidas',
                 
@@ -730,7 +730,7 @@ data = [{
                 price:8,
                 quantidade:0, 
             },{
-                id:'9',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 categoria:'bebidas',
                 
@@ -739,7 +739,7 @@ data = [{
                 price:5,
                 quantidade:0, 
             },{
-                id:'10',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 categoria:'bebidas',
                 
@@ -748,7 +748,7 @@ data = [{
                 price:5,
                 quantidade:0, 
             },{
-                id:'11',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 categoria:'bebidas',
                 
@@ -757,7 +757,7 @@ data = [{
                 price:5,
                 quantidade:0, 
             },{
-                id:'20',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 categoria:'bebidas',
                 
@@ -766,7 +766,7 @@ data = [{
                 price:15,
                 quantidade:0, 
             },{
-                id:'21',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 categoria:'bebidas',
                 
@@ -775,7 +775,7 @@ data = [{
                 price:18,
                 quantidade:0, 
             },{
-                id:'22',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 categoria:'bebidas',
                 
@@ -784,7 +784,7 @@ data = [{
                 price:18,
                 quantidade:0, 
             },{
-                id:'25',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 categoria:'bebidas',
                 
@@ -793,7 +793,7 @@ data = [{
                 price:12,
                 quantidade:0, 
             },{
-                id:'26',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 categoria:'bebidas',
                 
@@ -802,7 +802,7 @@ data = [{
                 price:14,
                 quantidade:0, 
             },{
-                id:'27',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 key:'',
                 categoria:'bebidas',
                 
@@ -816,7 +816,7 @@ data = [{
             id:'5c',
             name:'Cervejas', 
             products:[{
-                id:'130',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Cerveja Skol / Brahma Lata', 
@@ -824,7 +824,7 @@ data = [{
                 price:7, 
                 quantidade:0,
             },{
-                id:'131',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Serra Malte / Original / Brahma Duplo ', 
@@ -833,7 +833,7 @@ data = [{
                 quantidade:0,
 
             },{
-                id:'132',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Cerveja Heineken / Bud / Stella Lata', 
@@ -842,7 +842,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'133',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Cerveja Corona / Heineken Long Neck', 
@@ -851,7 +851,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'134',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Cerveja Bud / Stella Long Neck', 
@@ -860,7 +860,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'135',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Cerveja sem alcool Long Neck ', 
@@ -869,7 +869,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'191',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Red Bull Energético', 
@@ -878,7 +878,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'192',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Monster Energético', 
@@ -891,7 +891,7 @@ data = [{
             id:'6c',
             name:'Caipirinhas', 
             products:[{
-                id:'140',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Caipirinha Pinga', 
@@ -899,7 +899,7 @@ data = [{
                 price:22, 
                 quantidade:0,
             },{
-                id:'141',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Caipirinha Vodka Orloff', 
@@ -908,7 +908,7 @@ data = [{
                 quantidade:0,
 
             },{
-                id:'142',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Caipirinha Vodka Smirnoff', 
@@ -917,7 +917,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'143',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Caipirinha Rum', 
@@ -926,7 +926,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'145',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Caipirinha Cachaça', 
@@ -935,7 +935,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'146',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Caipirinha com Duas Frutas', 
@@ -944,7 +944,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'147',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 
                 categoria:'bebidas',
 
@@ -954,7 +954,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'149',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Caipirinha Saque', 
@@ -967,7 +967,7 @@ data = [{
             id:'7c',
             name:'Batidas', 
             products:[{
-                id:'185',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Batida Pinga', 
@@ -975,7 +975,7 @@ data = [{
                 price:20, 
                 quantidade:0,
             },{
-                id:Math.floor(Math.random() * 1000),
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Batida Cachaça', 
@@ -984,7 +984,7 @@ data = [{
                 quantidade:0,
 
             },{
-                id:'186',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Batida Vodka Orloff', 
@@ -993,7 +993,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'110',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Batida Vodka Smirnoff', 
@@ -1002,7 +1002,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'221',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Batida Espanhola', 
@@ -1015,7 +1015,7 @@ data = [{
             id:'8c',
             name:'Doses', 
             products:[{
-                id:'201',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Dose Pinga', 
@@ -1023,7 +1023,7 @@ data = [{
                 price:5, 
                 quantidade:0,
             },{
-                id:'202',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Dose Ypioca', 
@@ -1032,7 +1032,7 @@ data = [{
                 quantidade:0,
 
             },{
-                id:'203',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Dose Cinar', 
@@ -1041,7 +1041,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'204',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Dose Cachaça', 
@@ -1050,7 +1050,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'205',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Dose Vodka Smirnoff / Orloff', 
@@ -1059,7 +1059,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'206',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Dose Campare', 
@@ -1068,7 +1068,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'207',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Dose Martini', 
@@ -1077,7 +1077,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'208',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Dose Contine', 
@@ -1086,7 +1086,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'209',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Dose Jurupinga', 
@@ -1095,7 +1095,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'210',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Dose Conhaque', 
@@ -1104,7 +1104,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'211',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Drink Cuba libre', 
@@ -1113,7 +1113,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'212',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Drink Gin Tônica', 
@@ -1122,7 +1122,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'213',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Dose Rum', 
@@ -1131,7 +1131,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'214',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 name:'Dose Gin', 
                 categoria:'bebidas',
 
@@ -1140,7 +1140,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'224',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Drink Pina Colada', 
@@ -1149,7 +1149,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'227',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas', 
                 name:'Drink Canoa Beat', 
                 img:'assets/images/produtos/dosecanoasbeat.png',  
@@ -1157,7 +1157,7 @@ data = [{
                 quantidade:0, 
 
             },{
-                id:'241',
+                id:Math.floor(Math.random() * Date.now()).toString(),
                 categoria:'bebidas',
 
                 name:'Dose Whisky Passport', 
