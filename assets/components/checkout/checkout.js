@@ -1,15 +1,16 @@
 formcheckout=document.getElementById('checkoutform')
-totalfinesh=document.getElementById("totalfinesh")
-// itensTotal=document.getElementById("totalfinesh")
+totalfinesh=document.getElementById("totalfinesh") 
+
 inpuMMesa=document.getElementById('inputMesa')
+
+inputLocation=document.getElementById('inputLocation')
+locationvalue=""
+
 whatsappId=document.getElementById('whatsappId')
 inpuMWhats="" 
-function showNumber(){
 
-    var n=100;
-    return n+=1
-  
-}
+ 
+function showNumber(){  var n=100;  return n+=1 }
 getCheckout=()=>{ 
  
 
@@ -22,23 +23,20 @@ getCheckout=()=>{
     observacaoPedido='Nenhuma observação'
     retiradavalue=0
 
-
     
+ 
 
-    areaObs.addEventListener('change', function(event){
-        console.log(event.target.value)
+    areaObs.addEventListener('change', function(event){ 
         observacaoPedido=event.target.value
-        obsData={'observacaoPedido':observacaoPedido}
-    
-        prodsSelct.push(obsData) 
-
+        obs=observacaoPedido
+        obsData={'observacaoPedido':observacaoPedido} 
 
     })
- 
+
+
     // VALIDA CAMPO HOME
     if(text=="Mesa"){
-        mesaCheck=document.getElementById('selectMesaCheckout')
-        
+        mesaCheck=document.getElementById('selectMesaCheckout') 
     }
 
     // VALIDA CAMPO CHECKOUT 
@@ -46,6 +44,8 @@ getCheckout=()=>{
         mesaCheck.parentNode.style.cssText="display:flex"   
 
     }
+ 
+    // Open Checkout container
     containerCheckout.style.cssText="display:block"
 
 
@@ -60,6 +60,8 @@ formaRetirada=()=>{
     retiradavalue=document.getElementById('selectCheckout').value
     setMesa=document.getElementById('setMesa') 
     clickpague=document.getElementById('clickpague')
+
+
     if(retiradavalue=='mesa'){
         setMesa.style.cssText="display:flex"   
         whatsappId.style.cssText="display:none"  
@@ -69,10 +71,10 @@ formaRetirada=()=>{
 
         setMesa.style.cssText="display:none"  
         whatsappId.style.cssText="display:block"  
-        clickpague.style.cssText="display:block"  
- 
+        clickpague.style.cssText="display:block"   
         inpuMVaue=0
     }
+
 
     //Mesa Digitada
     setMesa.addEventListener('focusout', function(e){ 
@@ -84,6 +86,20 @@ formaRetirada=()=>{
               inpuMWhats=e.target.value.toString()  
           
     })
+    //Endereço Digitado
+    inputLocation.addEventListener('focusout', function(e){
+        console.log(e.target.value)
+        locationvalue=e.target.value
+    })
+    allordersBuy=[{ 
+        idPedido:Math.floor(Math.random() * 1000).toString(),
+        data:dataHora(),
+        hora:relogio(),
+        itens:prodsSelct,
+        location:locationvalue, 
+        observacao:obs
+
+    }]
 }
 
 

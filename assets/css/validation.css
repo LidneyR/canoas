@@ -10,8 +10,12 @@
     padding:0px;
     z-index: 999;
     background-color: black;
+    /* display: block !important; */
+   
 }
-
+button#btnFullScreen svg {
+    color: yellow !important;
+}
 .validation  span.number {
     display: flex;
     justify-content: center;
@@ -21,8 +25,7 @@
 }
 .validation .content {
     width: 100%;
-    margin: auto;
-    padding-top: 20%;
+    margin: auto; 
     transition: .3s;
 
 }
@@ -42,9 +45,18 @@
 .validation .content img {
     display: block;
     margin: 0 auto;
-    width: 250px;
-     transition: .3s;
+    width: auto;
+    transition: .3s;
+    max-width: 220px;
 
+}
+.content-text h1 {
+    font-size: 2.8rem;
+    text-align: left;
+    font-weight: 700;
+}
+.content-text h1 strong {
+    color:#FED30A
 }
 .validation .content p{
     font-size: 11px;
@@ -55,35 +67,41 @@
 
 .validation form {
     width: 85%;
-    margin: 70px auto;
+    margin: 35px auto;
     position: relative; 
-   
+    max-width: 365px;
 }
-form img {
-    margin-top: 15px;
+form img { 
     position: absolute;
     z-index: 99;
     width: 14px;
     left: 18px;z-index: 0;
     
-}select:invalid { color: red; }
+}
+img.boy {
+    width: 60px;
+    height: auto;
+    margin: 0;
+    position: relative;
+    bottom: 10px;
+    left: 0;
+}
+select:invalid { color: red; }
 .validation button {
-    width: 150px;
+    background: #ff5400;
+    color: white;
+    /* border: 1px solid; */
+    font-size: 1.0rem;
+    border-radius: 20px;
+    height: 55px;
+    max-width: 370px;
+    padding: 0 25px;
     margin: 10px auto;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Lexend Deca', sans-serif;
+    width: 280px;
     display: block;
-    background-color: #FB6E3B;
-    color: white;
-    height: 35px;
-    border-radius: 40px;
-    position: relative;
-    width: 190px;
-    margin: 15px auto;
-    display: block;
-    background-color: #FB6E3B;
-    color: white;
-    height: 40px;
-    border-radius: 40px;
-    position: relative;
 }
 .validation button img {
     left: inherit;

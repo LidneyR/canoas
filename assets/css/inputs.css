@@ -9,7 +9,7 @@ input,select {
     border-radius: 0 40px 40px 0;
     box-shadow: none;
     height: 50px;   
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 300;
     cursor: pointer;
     background-color: white;

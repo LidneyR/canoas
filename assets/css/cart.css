@@ -1,6 +1,6 @@
 .cart {
     position: fixed;
-    background: #fff;
+    background: white;
     height: 100%;
     left: 0;
     width: 100%;
@@ -12,13 +12,15 @@
 }
 .content h2 {
     padding: 0px 20px;
-    font-size: 25px;
+    font-size: 2.3rem;
     width: 200px;
-    color: #fb6e3b;
+    color: black;
     margin: 10px 0px 15px;
     line-height: 1.1;
+    
 }
 .cart .content {
+    margin: 32px 0 10px;
     padding: 0px 20px;
 }
 .cart .content h2 {
@@ -26,7 +28,7 @@
     margin: 0px;
 }
 .cart p {
-    color: #73859E;
+    color: #000000;
     padding: 0px;
     margin: 0px;
 }
@@ -35,17 +37,18 @@
 }
 span.qtdIcon {
     position: absolute;
-    background: #f8f8f8;
+    background: #E5040E;
     width: 20px;
     height: 20px;
     display: flex;
     justify-content: center;
-    top: 0;
+    top: 6px;
     border-radius: 20px;
     align-items: center;
-    color: #fb6e3b;
-    margin: 0 18px;
-    font-size: 10px;
+    color: #ffff;
+    margin: 0 51px;
+    font-size: 14px;
+    padding: 4px;
 }
 
 
@@ -57,23 +60,31 @@ span.qtdIcon {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: #fb6e3b;
-    color: white;
+    background: #f7f7f7;
+    color: #000000;
     flex-direction: column;
     padding: 25px 0;
     border: 0px;
     border-radius: 15px 15px 0px 0px;
     left:0;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 .total button {
-    background: #fb6e3b;
+    background: #ff5400;
     color: white;
-    border: 1px solid;
+    /* border: 1px solid; */
+    font-size: 1.0rem;
     border-radius: 20px;
-    height: 40px;
-    width: 200px;
+    height: 55px;
+    max-width: 370px;
     padding: 0 25px;
     margin: 10px auto;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Lexend Deca', sans-serif;
+    width: 280px;
+    
 }
 .cartProduct {
     display: flex;
@@ -87,8 +98,4 @@ span.qtdIcon {
 .cartProduct div:first-child {
     margin: 0 10px;
 }
-.controls button {
-    /* background: red; */
-    margin: 20px 10px;
-    color: #fb6e3b;
-}
+ 
