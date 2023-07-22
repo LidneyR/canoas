@@ -110,10 +110,20 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
-div#msgLoad p {
-    color: white;
+div#msgLoad h3 {
+    margin: 10rem auto 5px;
+    font-size: 1.8rem;
 }
-
+.msgLoad img:first-child {
+    display: none;
+}
+div#msgLoad p {
+    color: #ffb6b6;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0;
+}
 .msgLoad img {
     max-width: 140px;
+    margin: 5rem auto 0;
 }
