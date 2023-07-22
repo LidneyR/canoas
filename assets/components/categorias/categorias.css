@@ -1,5 +1,4 @@
 /* Style the tab */
- 
 .categories {
   margin: 20px auto;
   background-color: #fff;
@@ -13,7 +12,6 @@
   display: flex;
   justify-content: center;
   padding: 5px;
-
 }
 .tab.sub button {
   background: transparent;
@@ -21,11 +19,19 @@
   box-shadow: none;
   border-radius: 0px;
   width: 100%;
+  border: 1px solid;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  transition: .3s;
 
 }
-.tab svg  {font-size: 22px;
-margin-bottom: 5px;}
-/* Style the buttons inside the tab */
+.tab svg {
+ font-size: 22px;
+  margin-bottom: 5px;
+} 
 .tab button {
   font-family: 'Lexend Deca', sans-serif;
   float: left;
@@ -38,8 +44,7 @@ margin-bottom: 5px;}
   font-size: 13px;
   flex-direction: column;
   align-items: center;
-  color: #8b9398;
-  /* text-transform: uppercase; */
+  color: #8b9398; 
   font-weight: 300;
   background: #fff;
   margin:0px 5px 15px;
@@ -59,50 +64,53 @@ button.tablinks.active .img2 {
 button.tablinks .img2 {
   display: block;
 }
-
 /* Change background color of buttons on hover */
 .tab.sub button:hover {
   background-color: transparent;
-  border-bottom: 1px solid #FFF212;
-  color: #FFF212;
+  border-bottom: 1px solid #d94700;
+  color: #d94700;
   font-weight: 500;
   border-radius: 0px;
   padding: 0px 0px 5px ;
-}
+  transition: .3s;
+  border-radius:20px; 
 
+}
 /* Create an active/current tablink class */
 .tab button.active {
   background-color: #ff5400;
   color: white;
   font-weight: 700;
   box-shadow: inset 3px 2px 5px #d94700;
+  transition: .3s;
+  border-radius:20px;
+
 }
 .categories .tab button {
   font-size: 1.1rem;
 }
 .tab.sub button.active {
   background-color: transparent;
-  border-bottom: 1px solid #FFF212;
-  color: #FFF212;
+  border-bottom: 1px solid #ff5400;
+  color: #ff5400;
   font-weight: 500;
   border-radius: 0px;
   padding: 15px;
   box-shadow: none;
+  border-radius:10px;
+
 }
 /* Style the tab content */
 .tabcontent {
-display: none;
-padding:0;
-border-top: none;
-margin: 15px auto;
-padding: 0 ; 
+  display: none;
+  padding:0;
+  border-top: none;
+  margin: 15px auto;
+  padding: 0 ;
 }
-
-  .swiper-slide {
-  
+.swiper-slide {
   display: flex;
   justify-content: center;
-  
-    min-width: 180px !important;
- 
+  min-width: 180px !important;
+  margin: 0 15px;
 }

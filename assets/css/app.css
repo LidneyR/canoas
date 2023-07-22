@@ -99,8 +99,8 @@ h2 {
 }
 .msgLoad {
     position: fixed;
-    background: #f1f2f3;
-    color: #ff253a;
+    background: #ff253a;
+    color: white;
     display: none;
     z-index: 999;
     height: 100%;
@@ -111,7 +111,7 @@ h2 {
     align-items: center;
 }
 div#msgLoad p {
-    color: #8b9398;
+    color: white;
 }
 
 .msgLoad img {
