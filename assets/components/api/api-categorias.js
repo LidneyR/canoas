@@ -431,6 +431,8 @@ closeCheckout=()=>{
     ///update
    
 openTable=()=>{
+
+    console.log('open')
     setTimeout(function(){
 
         tabcontent = document.getElementsByClassName("tabcontent");

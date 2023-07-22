@@ -1,7 +1,7 @@
  
 var swiper = new Swiper(".mySwiper", {
   autoplay: {
-    delay: 2500,
+    delay: 500,
     disableOnInteraction: false,
     },
     pagination: {
@@ -12,7 +12,7 @@ var swiper = new Swiper(".mySwiper", {
           slidesPerView: 2,
           cssMode: true,
            autoplay: {
-          delay: 5500,
+          delay: 500,
           disableOnInteraction: false,
           },
           
