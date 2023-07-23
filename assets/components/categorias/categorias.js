@@ -26,7 +26,13 @@ function openCity(evt, cityName, parent) {
     }
   }
   document.getElementById(cityName).style.display = "block";
+  let tabcontentClass=document.getElementById(cityName).childNodes[3].getAttribute('class')
+
+ if(tabcontentClass!= 'produto'){
   document.getElementById(cityName).childNodes[3].style.display = "block";
+
+ }
+
   window.location.href='#categories'
 
   if (parent){
