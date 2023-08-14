@@ -36,8 +36,15 @@
   
   <div id="list"></div>
   <div class="validation" id="validation" >
-    <div >
-      <button id="btnFullScreen" onclick="fullScreen()"><i style="color: red;" class="fa-solid fa-expand"></i></button>
+    <div style="
+    display: flex;
+    justify-content: center;
+">
+      <button id="btnFullScreen" onclick="fullScreen(event)"><i style="color: red;" class="fa-solid fa-expand"></i>
+        <span>tela cheia</span>
+      </button>
+      <button id="btnCloseFullScreen" onclick="closeFullscreen(event)">
+        <i class="fa-regular fa-circle-xmark"></i></button>
 
     </div>
     <div class="content" >
@@ -69,6 +76,7 @@
           <option value="1">Selecione a forma de retirada</option>
           <option value="2">Delivery</option>
           <option value="3">Mesa</option>
+          <option value="3">Retirar no balcão</option>
         </select>
       </div>
       <button type="submit" onclick="validation(event)" value="submit">Cardápio
