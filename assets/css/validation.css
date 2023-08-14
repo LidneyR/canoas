@@ -13,8 +13,24 @@
     /* display: block !important; */
    
 }
+button#btnFullScreen span {
+    font-size: .5rem;
+    text-transform: uppercase;
+    display: inline;
+    position: relative;
+    bottom: 3px;
+    opacity: .8;
+}
+button#btnCloseFullScreen {
+    background: transparent;
+    display: none;
+}
+
+.show  {
+    display: block !important;
+}
 button#btnFullScreen svg {
-    color: yellow !important;
+    color: white !important;
 }
 .validation  span.number {
     display: flex;
