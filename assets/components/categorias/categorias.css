@@ -26,6 +26,7 @@
   justify-content: center;
   border-radius: 25px;
   transition: .3s;
+  padding:10px;
 
 }
 .tab svg {
@@ -74,6 +75,7 @@ button.tablinks .img2 {
   padding: 0px 0px 5px ;
   transition: .3s;
   border-radius:20px; 
+  padding:10px;
 
 }
 /* Create an active/current tablink class */
