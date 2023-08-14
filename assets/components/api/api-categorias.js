@@ -1,8 +1,11 @@
 
  
-fullScreen=()=>{
+fullScreen=(event)=>{
     var element = document.documentElement;
-    
+
+    document.getElementById('btnCloseFullScreen').style.cssText='display:block'
+    document.getElementById('btnFullScreen').style.cssText='display:none'
+  
     if (element.requestFullscreen) {
         element.requestFullscreen();
     } else if (element.mozRequestFullScreen) {
@@ -13,7 +16,19 @@ fullScreen=()=>{
         element.msRequestFullscreen();
     }
 } 
+function closeFullscreen(event) { 
 
+    document.getElementById('btnCloseFullScreen').style.cssText='display:none'
+    document.getElementById('btnFullScreen').style.cssText='display:block'
+
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) { /* Safari */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE11 */
+      document.msExitFullscreen();
+    }
+  }
  
 data=[]  
 database=[]  
@@ -226,6 +241,7 @@ STATUSMESA=false
   var cartContainer = document.getElementById('cart')
   var cartPreview = document.getElementById('cartPreview')
   input =document.getElementById(inputProd)
+
 
   cartQtd=0
   totalCart=0
