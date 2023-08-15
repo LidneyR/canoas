@@ -13,6 +13,8 @@
 .search svg {
     color: #ff5400 !important;
 }
+.search .controls {
+    position: absolute;}
 .search form .fa-magnifying-glass {
     left: 15px;
     position: relative;

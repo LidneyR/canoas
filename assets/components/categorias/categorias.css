@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 25px;
+  border-radius: 10px;
   transition: .3s;
   padding:10px;
 
