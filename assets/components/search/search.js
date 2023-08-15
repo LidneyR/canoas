@@ -16,12 +16,7 @@ getSearch=(event)=>{
     submitSearch=(event)=>{
         let searched=event.target.value  
         const productFound=ProductsFilter(searched)  
-        searchResult.innerHTML=`   `;   
-      
-            // if(searched.length<=3){
-            // searchResult.innerHTML="" 
-
-            // }
+        searchResult.innerHTML=`   `;    
           
             searched.length > 3 ?  render(productFound) :  searchResult.innerHTML="<div>Produto não encontrado</div>"
 

@@ -17,6 +17,10 @@
     left: 15px;
     position: relative;
 }
+div#searchResult .ux {
+    display: flex;
+    margin: 51px;
+}
 .search form .fa-arrow-right {
     right: 45px;
     position: relative;
