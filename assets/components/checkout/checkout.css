@@ -16,6 +16,15 @@ div#checkout textarea {
     border: 1px solid #73859E;
  
 }
+span.alertcheck {
+    padding: 0;
+    margin: 5px auto 0px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    color: #d94700;
+    font-style: italic;
+}
 textarea {
     width: 100%;
     height: 100px;

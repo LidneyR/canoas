@@ -109,15 +109,16 @@ select:invalid { color: red; }
     /* border: 1px solid; */
     font-size: 1.0rem;
     border-radius: 20px;
-    height: 55px;
+    height: 45px;
     max-width: 370px;
     padding: 0 25px;
     margin: 10px auto;
     text-transform: capitalize;
     font-weight: bold;
     font-family: 'Lexend Deca', sans-serif;
-    width: 280px;
+    width: 80%;
     display: block;
+
 }
 .validation button img {
     left: inherit;

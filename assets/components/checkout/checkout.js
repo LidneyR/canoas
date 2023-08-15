@@ -67,12 +67,18 @@ formaRetirada=()=>{
         whatsappId.style.cssText="display:none"  
         clickpague.style.cssText="display:none"  
 
-    }else if(retiradavalue=='balcao'){
+    }else if(retiradavalue=='delivery'){
 
         setMesa.style.cssText="display:none"  
         whatsappId.style.cssText="display:block"  
         clickpague.style.cssText="display:block"   
         inpuMVaue=0
+    }else if(retiradavalue=='balcao'){
+
+        // setMesa.style.cssText="display:none"  
+        // whatsappId.style.cssText="display:block"  
+        // clickpague.style.cssText="display:block"   
+        // inpuMVaue=0
     }
 
 

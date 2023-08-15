@@ -86,7 +86,8 @@ h2 {
     top: 0;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100%; 
+    background: #ffffff;
 }
 @media(min-width:600px){
     .banners{
