@@ -203,40 +203,29 @@
   <div class="search">
     <h2>O que deseja pedir hoje?</h2>
     <form>
-      <!--           
-        <div class="mylabel">
-          <label>  <img src="assets/images/inputs/user.png" style="width: 16px;">
-          </label>
-          <input id="userName" style="margin-bottom: 5px !important;" placeholder="Digite seu nome" type="text" required> 
-        </div> -->
+      
       <div class="mylabel">
         <label style="
           top: 0px;
           height: 46px;
           ">  
-        <!-- <img src="assets/images/search.png" alt=""> -->
+       
         <i class="fa-solid fa-magnifying-glass"></i>  
         </label>
         <input  onclick="getSearch(event)" type="text" placeholder="Buscar produtos...">
-        <!-- <i class="fa-solid fa-arrow-right"></i> -->
+     
       </div>
       <div id="contentSearch" class="contentSearch">
         <!-- CONTROLES -->
         <div class="controls">
           <button onclick="getSearch(event)">
-            <svg class="svg-inline--fa fa-chevron-left" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
-              <path fill="currentColor" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"></path>
-            </svg>
-            <!-- <i class="fa-solid fa-chevron-left"></i> Font Awesome fontawesome.com -->
+            <i class="fa-solid fa-chevron-left"></i>
           </button>
           <button onclick="getSearch(event)">
-            <svg class="svg-inline--fa fa-xmark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
-              <path fill="currentColor" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path>
-            </svg>
-            <!-- <i class="fa-solid fa-xmark"></i> Font Awesome fontawesome.com -->
+            <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
-        <div class="mylabel" style="position: inherit;width: 100%;margin-top: 50px;margin-bottom: 10px;margin-left: 10px;"> 
+        <div class="mylabel" style="position: inherit;width: 100%;margin-top: 10px;margin-bottom: 10px;margin-left: 10px;"> 
           <label>  
               <i class="fa-solid fa-magnifying-glass"></i>
           </label>
@@ -244,7 +233,10 @@
         </div>
       </div>
     </form>
-    <div id="searchResult"></div>
+    <div id="searchResult">
+      <span class="ux">Encontre produtos aqui...O que está buscando?</span>
+
+    </div>
   </div>
    
   <div id="categories" class="categories"> </div>
@@ -482,12 +474,6 @@
         //Load 
         document.getElementById('msgLoad').style.cssText='display:flex'
         btnSubmitOrder.setAttribute("disabled", true)
-
-
-        
-       
-
-
 
  
  
