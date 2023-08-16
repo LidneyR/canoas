@@ -24,6 +24,8 @@ span.alertcheck {
     justify-content: center;
     color: #d94700;
     font-style: italic;
+    font-size: .8rem;
+    text-transform: lowercase;
 }
 textarea {
     width: 100%;

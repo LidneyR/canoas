@@ -360,6 +360,9 @@ STATUSMESA=false
             }]
         }
 
+        //RESUMO DA COMPRA CARRINHO
+
+
         document.getElementById("itensTotal").innerHTML+=  itensTotal
         cartContainer.innerHTML+= ` 
 
@@ -374,9 +377,12 @@ STATUSMESA=false
             </div> 
         `; 
 
+
+        //RESUMO DA COMPRA CHECKOUT
+
         totalfinesh.innerHTML+=`
         <div class="total" id="fineshPay" style=" z-index: 99;"> 
-            Total da compra
+            Toaatal da compra
             `+totalCart.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) +` 
 
             <span id="clickpague"   onclick="animatedCheckOut()">clique e pague</span>

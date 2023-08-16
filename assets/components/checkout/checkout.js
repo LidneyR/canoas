@@ -73,6 +73,33 @@ formaRetirada=()=>{
         whatsappId.style.cssText="display:block"  
         clickpague.style.cssText="display:block"   
         inpuMVaue=0
+
+        
+        var vardez=totalCart*10/100
+        console.log('result',totalCart+vardez)
+        var resultDez=totalCart+vardez
+
+
+        totalfinesh.innerHTML=`
+        <div class="total" id="fineshPay" style=" z-index: 99;"> 
+            Total compra delivery
+            `+resultDez.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) +` 
+
+            <span style='display:none;' id="clickpague"   onclick="animatedCheckOut()">clique e pague</span>
+            
+            <div id="rrcode" style='display:none;' >
+                <img src="https://lidneyr.github.io/adm/assets/components/impressao/andd.png"> 
+
+           <span > Pague com QR CODE </span>
+      
+           </div>
+        
+             <button type="submit" id="submitCheck">ENVIAR MEU PEDIDO 
+             <i class="fa-solid fa-paper-plane"></i>
+             </button>
+        </div> 
+        `;
+        
     }else if(retiradavalue=='balcao'){
 
         // setMesa.style.cssText="display:none"  
@@ -87,16 +114,18 @@ formaRetirada=()=>{
         inpuMVaue=document.getElementById('inputMesa').value.toString()   
     })
 
-    //whats Digitado
-    whatsappId.addEventListener('focusout', function(e){
-              inpuMWhats=e.target.value.toString()  
-          
-    })
+    
     //Endereço Digitado
-    inputLocation.addEventListener('focusout', function(e){
-        console.log(e.target.value)
+    inputLocation.addEventListener('focusout', function(e){ 
         locationvalue=e.target.value
     })
+
+    //whats Digitado
+    whatsappId.addEventListener('focusout', function(e){
+        inpuMWhats=e.target.value.toString()  
+    
+    })  
+
     allordersBuy=[{ 
         idPedido:Math.floor(Math.random() * 1000).toString(),
         data:dataHora(),
