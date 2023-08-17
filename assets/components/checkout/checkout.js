@@ -67,16 +67,29 @@ formaRetirada=()=>{
         whatsappId.style.cssText="display:none"  
         clickpague.style.cssText="display:none"  
 
+
+
+         
+    totalfinesh.innerHTML=` 
+    <div class="total" id="fineshPay" style=" z-index: 99;"> 
+            Total compra
+            `+totalCart.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) +`  
+             
+        
+             <button type="submit" id="submitCheck">ENVIAR MEU PEDIDO 
+                <i class="fa-solid fa-paper-plane"></i>
+             </button>
+        </div>
+    `;
+
     }else if(retiradavalue=='delivery'){
 
         setMesa.style.cssText="display:none"  
-        whatsappId.style.cssText="display:block"  
-        clickpague.style.cssText="display:block"   
+        whatsappId.style.cssText="display:block" 
         inpuMVaue=0
 
         
-        var vardez=totalCart*10/100
-        console.log('result',totalCart+vardez)
+        var vardez=totalCart*10/100 
         var resultDez=totalCart+vardez
 
 
@@ -106,6 +119,18 @@ formaRetirada=()=>{
         // whatsappId.style.cssText="display:block"  
         // clickpague.style.cssText="display:block"   
         // inpuMVaue=0
+
+        totalfinesh.innerHTML=`
+        <div class="total" id="fineshPay" style=" z-index: 99;"> 
+            Total compra
+            `+totalCart.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) +`  
+             
+        
+             <button type="submit" id="submitCheck">ENVIAR MEU PEDIDO 
+                <i class="fa-solid fa-paper-plane"></i>
+             </button>
+        </div> 
+        `;
     }
 
 

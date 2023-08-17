@@ -447,6 +447,35 @@ sendOrder=(event)=>{
 
 closeCheckout=()=>{ 
     containerCheckout.classList.toggle("hide");
+
+    console.log(document.getElementById('selectCheckout'))
+
+    document.getElementById('selectCheckout').value=1
+
+
+    
+    totalfinesh.innerHTML=`
+    <div class="total" id="fineshPay" style=" z-index: 99;"> 
+        Total compra delivery
+        `+totalCart.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) +` 
+
+        <span style='display:none;' id="clickpague"   onclick="animatedCheckOut()">clique e pague</span>
+        
+        <div id="rrcode" style='display:none;' >
+            <img src="https://lidneyr.github.io/adm/assets/components/impressao/andd.png"> 
+
+       <span > Pague com QR CODE </span>
+  
+       </div>
+    
+         <button type="submit" id="submitCheck">ENVIAR MEU PEDIDO 
+         <i class="fa-solid fa-paper-plane"></i>
+         </button>
+    </div> 
+    `;
+
+    // document.querySelectorAll('alertcheck').style.cssText='display:none;'
+    
 }
 
 
