@@ -446,14 +446,19 @@ sendOrder=(event)=>{
 }
 
 closeCheckout=()=>{ 
+
     containerCheckout.classList.toggle("hide");
 
-    console.log(document.getElementById('selectCheckout'))
+    document.getElementById('selectCheckout').value=1 
+    var warningCheck=document.querySelectorAll('.alertcheck') 
+    var arrWarn=Array.from(warningCheck)
 
-    document.getElementById('selectCheckout').value=1
+    setMesa.style.cssText="display:none"  
+    whatsappId.style.cssText="display:none" 
 
-
-    
+    arrWarn.map((element)=>{
+        element.style.cssText='display:none;'
+    })
     totalfinesh.innerHTML=`
     <div class="total" id="fineshPay" style=" z-index: 99;"> 
         Total compra delivery

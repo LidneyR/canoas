@@ -90,6 +90,7 @@ button.tablinks .img2 {
 }
 .categories .tab button {
   font-size: 1.1rem;
+  padding: 10px 10px;
 }
 .tab.sub button.active {
   background-color: transparent;

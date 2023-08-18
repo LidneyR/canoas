@@ -91,8 +91,14 @@ formaRetirada=()=>{
         
         var vardez=totalCart*10/100 
         var resultDez=totalCart+vardez
+        var warningCheck=document.querySelectorAll('.alertcheck') 
+
+        var arrWarn=Array.from(warningCheck)
 
 
+        arrWarn.map((element)=>{
+            element.style.cssText='display:flex;'
+        })
         totalfinesh.innerHTML=`
         <div class="total" id="fineshPay" style=" z-index: 99;"> 
             Total compra delivery
