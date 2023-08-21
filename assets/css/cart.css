@@ -11,7 +11,7 @@
     overflow: auto;
 }
 .content h2 {
-    padding: 0px 20px;
+    padding: 0px 35px;
     font-size: 2.3rem;
     width: 200px;
     color: black;
@@ -19,6 +19,17 @@
     line-height: 1.1;
     
 }
+.content p {
+    padding: 0px 35px;
+    font-size: 1.1rem;
+    width: 246px;
+    color: rgb(101 101 101);
+    margin: 10px 0px 15px;
+    line-height: 1.1;
+    font-style: italic !important;
+}
+
+ 
 .cart .content {
     margin: 32px 0 10px;
     padding: 0px 20px;
