@@ -124,6 +124,8 @@
 
       <div class="content">
         <h2>Finalizar Pedido </h2>
+        <p><i class="fa-solid fa-location-crosshairs"></i> End. Praia da Lagoinha - Nº 000  | Ubatuba-SP</p>
+      
       </div>
 
       <form id="checkoutform" class="checkoutform" >
@@ -134,6 +136,7 @@
               ">
             Forma de retirada:
             </label> 
+           
             <div class="mylabel select">
               <label>
               <img src="assets/images/inputs/archive.png" >
@@ -152,8 +155,9 @@
               </label>
               <input id="inputMesa"  type="number" placeholder="Digite o numero da mesa">
             </div>
+            
             <div id="whatsappId"  style="display: none; ">
-              <span class="alertcheck"><i class="fa-solid fa-info"></i>Taxa de entrega 10% do pedido. </span>
+              <span class="alertcheck" id='dezdelivery'><i class="fa-solid fa-info"></i>Taxa de entrega 10% do pedido. </span>
               <div id="setPhone" class="mylabel" >
                 <label style="height:48px;">   
                 <i class="fa-solid fa-location-dot"></i>
@@ -272,11 +276,11 @@
  
     const firebaseConfig = {
       apiKey: "AIzaSyCh6Q_k8wZjWZ65mZpZE00B6NlTcI7pcoU",
-  authDomain: "canoas-88911.firebaseapp.com",
-  projectId: "canoas-88911",
-  storageBucket: "canoas-88911.appspot.com",
-  messagingSenderId: "725157058271",
-  appId: "1:725157058271:web:f8256d35ff289ef560bb6a"
+      authDomain: "canoas-88911.firebaseapp.com",
+      projectId: "canoas-88911",
+      storageBucket: "canoas-88911.appspot.com",
+      messagingSenderId: "725157058271",
+      appId: "1:725157058271:web:f8256d35ff289ef560bb6a"
     }; 
 
       // Initialize Firebase
@@ -520,6 +524,16 @@
                       
                       if(initF==true){ 
                           // ENVIA PEDIDO DELIVERY
+
+
+                          console.lo('ponto1',
+                            {  
+                                "name":userNameString,
+                                "id":idClient,
+                                "whatsapp":inpuMWhats,
+                                orders:recebePedidos   
+                          }
+                          )
                           db.collection('delivery').doc(idClient).set({  
                                 "name":userNameString,
                                 "id":idClient,
@@ -527,7 +541,7 @@
                                 orders:recebePedidos   
                           }) 
 
-                          // ENVIA NOTIFICACAO DELIVERY
+                          // // ENVIA NOTIFICACAO DELIVERY
                           db.collection('notificacoes').doc(horaReplace).set({  
                                 "name":userNameString,
                                 "whatsapp":inpuMWhats,
@@ -598,8 +612,21 @@
 
         }else{ 
 
+
+
+
+            //PRIMEIRO PEDIDO DELIVER?
+
               let userNameString=inputUserName.toLowerCase().replace(/\s/g, '');
               let idClient=localStorage.getItem("idClient");
+
+              console.log('first buy ?',{  
+                "name":userNameString,
+                "id":idClient, 
+                "whatsapp":inpuMWhats, 
+                orders:allordersBuy  //<==================Pedidos Recebidos
+                
+              })
               db.collection('delivery').doc(idClient).set({  
                 "name":userNameString,
                 "id":idClient, 
