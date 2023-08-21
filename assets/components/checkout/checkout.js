@@ -95,10 +95,12 @@ formaRetirada=()=>{
 
         var arrWarn=Array.from(warningCheck)
 
-
+        
         arrWarn.map((element)=>{
             element.style.cssText='display:flex;'
         })
+        document.getElementById('setPhone').style.cssText="display:flex"  
+
         totalfinesh.innerHTML=`
         <div class="total" id="fineshPay" style=" z-index: 99;"> 
             Total compra delivery
@@ -121,8 +123,11 @@ formaRetirada=()=>{
         
     }else if(retiradavalue=='balcao'){
 
-        // setMesa.style.cssText="display:none"  
-        // whatsappId.style.cssText="display:block"  
+        setMesa.style.cssText="display:none"  
+        whatsappId.style.cssText="display:block" 
+        document.getElementById('setPhone').style.cssText="display:none"  
+        document.getElementById('dezdelivery').style.cssText="display:none"  
+        
         // clickpague.style.cssText="display:block"   
         // inpuMVaue=0
 
